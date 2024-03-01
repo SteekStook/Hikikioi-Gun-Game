@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.1306316110252617,
+    "zoomFactor": 0.5824517733822229,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -507,7 +507,7 @@
           "RotationSpeedMax": 180,
           "RotationAcceleration": 720,
           "RotationDeceleration": 720,
-          "TranslationSpeedMax": 340,
+          "TranslationSpeedMax": 400,
           "TranslationAcceleration": 2400,
           "TranslationDeceleration": 1600,
           "CurrentRotationSpeed": 0,
@@ -1310,6 +1310,56 @@
                   },
                   "parameters": [
                     "",
+                    "\"o\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MousePointerLock::RequestPointerLock"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"p\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MousePointerLock::ExitPointerLock"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
                     "\"w\""
                   ]
                 }
@@ -1400,56 +1450,6 @@
                   "parameters": [
                     "Player",
                     "Walk3D",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"o\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MousePointerLock::RequestPointerLock"
-                  },
-                  "parameters": [
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"p\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MousePointerLock::ExitPointerLock"
-                  },
-                  "parameters": [
-                    "",
                     ""
                   ]
                 }
@@ -4507,7 +4507,7 @@
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
       "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
+      "camera3DFieldOfView": 80,
       "camera3DNearPlaneDistance": 3,
       "cameraType": "perspective",
       "followBaseLayerCamera": false,
@@ -4515,7 +4515,7 @@
       "isLocked": false,
       "name": "",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [
         {
           "defaultSize": true,
