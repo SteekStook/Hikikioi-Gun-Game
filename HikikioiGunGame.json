@@ -153,6 +153,94 @@
         "name": "assets\\Visuals\\Crosshair2.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Shaded Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shaded Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/96409107ae77918bbcde7a715c09e12b1b6c8ef16524b06b0d162955f1bd1a27_Shaded Red Fill Bar.png",
+          "name": "Shaded Red Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wood Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wood Bar Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/5c3135f6fa8587da82ddea950881fc8b35d422bb806d9331f8b47fdc715ee76a_Wood Bar Border.png",
+          "name": "Wood Bar Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dot Bar Green Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Green Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/e0754c6008a7f3ec35ce32d663263982cd7a67f91974977d1c1247b90891b1b9_Dot Bar Green Border.png",
+          "name": "Dot Bar Green Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dot Bar Green Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Green Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/11956f33bb9a6ca4997feced357ff80d8b2597367951d4ab34cd67d5a2d8b054_Dot Bar Green Fill Bar.png",
+          "name": "Dot Bar Green Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New3DBox_Front2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New3DBox_Front2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/New3DBox_Front2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\New3DBox_Front2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/Dot Bar Green Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/Dot Bar Green Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\Dot Bar Green Border.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -171,6 +259,14 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/mousepointerlock"

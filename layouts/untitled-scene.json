@@ -11,14 +11,14 @@
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 8,
-    "gridHeight": 8,
+    "gridWidth": 4,
+    "gridHeight": 4,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5824517733822229,
+    "zoomFactor": 1.0937500000000027,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -275,7 +275,7 @@
       "name": "DebugText",
       "persistentUuid": "87c9e832-cc1c-4b8b-978e-369e9ab2d8b8",
       "width": 0,
-      "x": 40,
+      "x": 563,
       "y": 8,
       "zOrder": 11,
       "numberProperties": [],
@@ -371,6 +371,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "GreenDotBar",
+      "persistentUuid": "30c10095-8c6a-4976-81ae-9c83a09e2538",
+      "width": 0,
+      "x": 8,
+      "y": 8,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -416,9 +431,21 @@
       "variables": [
         {
           "folded": true,
+          "name": "HP",
+          "type": "number",
+          "value": 16
+        },
+        {
+          "folded": true,
           "name": "CardSelected",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "CardAction",
+          "type": "string",
+          "value": ""
         },
         {
           "folded": true,
@@ -470,13 +497,13 @@
               "folded": true,
               "name": "BasicShot",
               "type": "number",
-              "value": 3
+              "value": 4
             },
             {
               "folded": true,
               "name": "BigShot",
               "type": "number",
-              "value": 4
+              "value": 3
             },
             {
               "folded": true,
@@ -501,6 +528,36 @@
       ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
         {
           "name": "Walk3D",
           "type": "Walk3D::Walk3D",
@@ -798,7 +855,7 @@
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -839,7 +896,7 @@
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -880,7 +937,7 @@
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -921,7 +978,7 @@
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -1021,14 +1078,187 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
+      "name": "GreenDotBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "InitialValue": 16,
+        "MaxValue": 16
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 26,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "assets\\Visuals\\Dot Bar Green Border.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 118
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 19,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 21
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 19,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 21
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "2 / 3",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "2 / 3",
+            "font": "",
+            "textAlignment": "",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "BasicBullet",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 16,
+        "height": 16,
+        "depth": 16,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "BigBullet",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 64,
+        "height": 64,
+        "depth": 64,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "backFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
+        "folderName": "PlayerStuff",
+        "children": [
+          {
+            "objectName": "Player"
+          },
+          {
+            "objectName": "BasicBullet"
+          },
+          {
+            "objectName": "BigBullet"
+          }
+        ]
+      },
+      {
         "folderName": "UI",
         "children": [
+          {
+            "objectName": "GreenDotBar"
+          },
           {
             "objectName": "Crosshair"
           },
@@ -1060,9 +1290,6 @@
       },
       {
         "objectName": "Floor"
-      },
-      {
-        "objectName": "Player"
       }
     ]
   },
@@ -1180,13 +1407,24 @@
         },
         {
           "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "GreenDotBar",
+            "=",
+            "Player.HP",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
             "DebugText",
             "Text",
             "=",
-            "Player.DeckPile.Heal"
+            "Player.CardAction"
           ]
         },
         {
@@ -1253,6 +1491,28 @@
             "Text",
             "=",
             "Player.DiscardCount"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "BasicBullet",
+            "Object3D",
+            "=",
+            "80"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "BigBullet",
+            "Object3D",
+            "=",
+            "80"
           ]
         }
       ]
@@ -1582,6 +1842,17 @@
                       },
                       "parameters": [
                         "Player",
+                        "CardAction",
+                        "=",
+                        "Player.CardHand[0]"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
                         "CardHand[0]",
                         "=",
                         "\"0\""
@@ -1636,6 +1907,17 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "Player.CardHand[1]"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "ModVarObjetTxt"
@@ -1702,6 +1984,17 @@
                       },
                       "parameters": [
                         "Player",
+                        "CardAction",
+                        "=",
+                        "Player.CardHand[2]"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
                         "CardHand[2]",
                         "=",
                         "\"0\""
@@ -1756,6 +2049,17 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "Player.CardHand[3]"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "ModVarObjetTxt"
@@ -4490,9 +4794,218 @@
               "parameters": []
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "CardActions",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "\"BasicShot\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::Fire"
+                      },
+                      "parameters": [
+                        "Player",
+                        "FireBullet",
+                        "Player.X()",
+                        "Player.Y()",
+                        "BasicBullet",
+                        "Player.Angle()",
+                        "1024",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "\"BigShot\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::Fire"
+                      },
+                      "parameters": [
+                        "Player",
+                        "FireBullet",
+                        "Player.X()",
+                        "Player.Y() -24",
+                        "BigBullet",
+                        "Player.Angle()",
+                        "256",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "\"SniperShot\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "\"Dash\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "\"Heal\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": []
+                }
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -4556,6 +5069,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
       "name": "Flippable",
