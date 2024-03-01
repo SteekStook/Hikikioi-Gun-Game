@@ -1,0 +1,4591 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Untitled_32scene",
+  "name": "Untitled scene",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": true,
+    "gridType": "rectangular",
+    "gridWidth": 8,
+    "gridHeight": 8,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": true,
+    "zoomFactor": 1.1306316110252617,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "MouseWheelDeltaVar",
+      "type": "number",
+      "value": 0
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 356,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "e73c288d-5e8c-46ce-9b0e-b3cf0a14b907",
+      "width": 640,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 16,
+      "height": 16,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "4b465bd1-f9c6-48d5-991a-ee908534d50a",
+      "width": 16,
+      "x": 112,
+      "y": 160,
+      "z": 100,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "0a8ee219-66d1-4a58-acc8-cb2a2f5a12b5",
+      "width": 0,
+      "x": 636,
+      "y": -100,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "a20ec859-bf97-4c38-b184-fd350d0803cb",
+      "width": 0,
+      "x": -100,
+      "y": -100,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "b0197fdc-d19c-4f24-8535-bfb5f489b262",
+      "width": 0,
+      "x": 640,
+      "y": 364,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "ca2359f4-ab3c-4c53-bf40-8b747580c605",
+      "width": 0,
+      "x": -96,
+      "y": 352,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Crosshair",
+      "persistentUuid": "0fbe62c4-75ff-49d3-be38-22c2206c7c35",
+      "width": 0,
+      "x": 304,
+      "y": 164,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Crosshair",
+      "persistentUuid": "27f58e88-c3e1-444f-8040-660e919b384e",
+      "width": 0,
+      "x": 368,
+      "y": 144,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Crosshair",
+      "persistentUuid": "1beec05b-85c3-4da9-bed9-00cb451243a5",
+      "width": 0,
+      "x": 304,
+      "y": 96,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 164,
+      "layer": "UI",
+      "name": "Crosshair",
+      "persistentUuid": "d6794e06-385c-401e-a95a-21eabbf379ad",
+      "width": 304,
+      "x": 640,
+      "y": -8,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 96,
+      "layer": "UI",
+      "name": "CardSlots",
+      "persistentUuid": "716648aa-0a15-4456-96e7-1d140227b176",
+      "width": 64,
+      "x": 168,
+      "y": 296,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 96,
+      "layer": "UI",
+      "name": "CardSlots",
+      "persistentUuid": "58fed102-359d-47ad-8708-e93a1c6ff6e2",
+      "width": 64,
+      "x": 248,
+      "y": 296,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CardPosition",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 96,
+      "layer": "UI",
+      "name": "CardSlots",
+      "persistentUuid": "2cbd89fa-c7e4-49fb-9291-28ffef22bbbb",
+      "width": 64,
+      "x": 328,
+      "y": 296,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CardPosition",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 96,
+      "layer": "UI",
+      "name": "CardSlots",
+      "persistentUuid": "0f505089-9e31-4128-b733-d7da19c1714c",
+      "width": 64,
+      "x": 408,
+      "y": 296,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "CardPosition",
+          "type": "number",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "DebugText",
+      "persistentUuid": "87c9e832-cc1c-4b8b-978e-369e9ab2d8b8",
+      "width": 0,
+      "x": 40,
+      "y": 8,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Card0",
+      "persistentUuid": "615eb013-ab56-454c-85a9-bd358b81c008",
+      "width": 0,
+      "x": 176,
+      "y": 272,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Card1",
+      "persistentUuid": "2dca892b-0ee0-4dff-8cd1-f9e93b518d31",
+      "width": 0,
+      "x": 256,
+      "y": 272,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Card3",
+      "persistentUuid": "67eeea20-a82a-4f0c-841b-470642ef8417",
+      "width": 0,
+      "x": 424,
+      "y": 272,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "Card2",
+      "persistentUuid": "affd9989-d768-45d9-ba8b-7d01609fa551",
+      "width": 0,
+      "x": 339,
+      "y": 272,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "DeckCount",
+      "persistentUuid": "ed67c7ea-65c2-4de0-b73e-7c38b3a3ed7f",
+      "width": 0,
+      "x": 8,
+      "y": 328,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "DiscardCount",
+      "persistentUuid": "d2b2fd65-9bcb-4e9e-b88e-c876ecc11ad3",
+      "width": 0,
+      "x": 592,
+      "y": 328,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "Floor",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 100,
+        "height": 100,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
+        "backFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
+        "rightFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
+        "topFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
+        "bottomFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Player",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [
+        {
+          "folded": true,
+          "name": "CardSelected",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "WhichCardNext",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "DeckCount",
+          "type": "number",
+          "value": 16
+        },
+        {
+          "folded": true,
+          "name": "DiscardCount",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "CardHand",
+          "type": "array",
+          "children": [
+            {
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "type": "string",
+              "value": "0"
+            },
+            {
+              "folded": true,
+              "type": "string",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "DeckPile",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "BasicShot",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "folded": true,
+              "name": "BigShot",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "folded": true,
+              "name": "Dash",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "folded": true,
+              "name": "Heal",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "folded": true,
+              "name": "SniperShot",
+              "type": "number",
+              "value": 5
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Walk3D",
+          "type": "Walk3D::Walk3D",
+          "RotationSpeedMax": 180,
+          "RotationAcceleration": 720,
+          "RotationDeceleration": 720,
+          "TranslationSpeedMax": 340,
+          "TranslationAcceleration": 2400,
+          "TranslationDeceleration": 1600,
+          "CurrentRotationSpeed": 0,
+          "PreviousRotationSpeed": 0,
+          "CurrentForwardSpeed": 0,
+          "CurrentSidewaysSpeed": 0,
+          "PreviousForwardSpeed": 0,
+          "PreviousSidewaysSpeed": 0,
+          "HasPressedTurnLeft": false,
+          "HasPressedTurnRight": false,
+          "HasPressedTurnLeftLast": false,
+          "HadPressedTurnLeft": false,
+          "HadPressedTurnRight": false,
+          "HasPressedMoveForward": false,
+          "HasPressedMoveBackward": false,
+          "HadPressedMoveForward": false,
+          "HadPressedMoveBackward": false,
+          "HasPressedMoveBackwardLast": false,
+          "HasPressedMoveLeft": false,
+          "HasPressedMoveRight": false,
+          "HadPressedMoveLeft": false,
+          "HadPressedMoveRight": false,
+          "HasPressedMoveLeftLast": false,
+          "TargetedForwardSpeed": 0,
+          "TargetedSidewaysSpeed": 0,
+          "TargetedRotationSpeed": 0
+        }
+      ],
+      "content": {
+        "width": 100,
+        "height": 100,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\WhiteBox.png",
+        "backFaceResourceName": "assets\\Visuals\\WhiteBox.png",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets\\Visuals\\WhiteBox.png",
+        "rightFaceResourceName": "assets\\Visuals\\WhiteBox.png",
+        "topFaceResourceName": "assets\\Visuals\\WhiteBox.png",
+        "bottomFaceResourceName": "assets\\Visuals\\WhiteBox.png",
+        "frontFaceVisible": true,
+        "backFaceVisible": true,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Crosshair",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Crosshair",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\Crosshair2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "CardSlots",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "CardPosition",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Unselected",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\CardSlots.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Selected",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\Selected.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DebugText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Card0",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Card1",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Card3",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Card2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DeckCount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "DiscardCount",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "UI",
+        "children": [
+          {
+            "objectName": "Crosshair"
+          },
+          {
+            "objectName": "CardSlots"
+          },
+          {
+            "objectName": "DebugText"
+          },
+          {
+            "objectName": "Card0"
+          },
+          {
+            "objectName": "Card1"
+          },
+          {
+            "objectName": "Card2"
+          },
+          {
+            "objectName": "Card3"
+          },
+          {
+            "objectName": "DeckCount"
+          },
+          {
+            "objectName": "DiscardCount"
+          }
+        ]
+      },
+      {
+        "objectName": "Floor"
+      },
+      {
+        "objectName": "Player"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetWindowSize"
+          },
+          "parameters": [
+            "",
+            "1280",
+            "720",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CenterWindow"
+          },
+          "parameters": [
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Crosshair",
+            "Opacity",
+            "=",
+            "200"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"ReloadTime\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "FirstPersonCamera::LookFromObjectEyes"
+          },
+          "parameters": [
+            "",
+            "Player",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetRotationY"
+          },
+          "parameters": [
+            "Player",
+            "Object3D",
+            "+",
+            "MousePointerLock::MovementY() / 10"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetRotationY"
+          },
+          "parameters": [
+            "Player",
+            "Object3D",
+            "=",
+            "clamp(Player.Object3D::RotationY(), -90, 90)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetAngle"
+          },
+          "parameters": [
+            "Player",
+            "+",
+            "MousePointerLock::MovementX() / 6"
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "MouseWheelDeltaVar",
+            "=",
+            "MouseWheelDelta()"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "DebugText",
+            "Text",
+            "=",
+            "Player.DeckPile.Heal"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Card0",
+            "Text",
+            "=",
+            "Player.CardHand[0]"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Card1",
+            "Text",
+            "=",
+            "Player.CardHand[1]"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Card2",
+            "Text",
+            "=",
+            "Player.CardHand[2]"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "Card3",
+            "Text",
+            "=",
+            "Player.CardHand[3]"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "DeckCount",
+            "Text",
+            "=",
+            "Player.DeckCount"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "DiscardCount",
+            "Text",
+            "=",
+            "Player.DiscardCount"
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Controls",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"r\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Untitled scene\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Walk3D::Walk3D::SimulateMoveForwardKey"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Walk3D",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"s\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Walk3D::Walk3D::SimulateMoveBackwardKey"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Walk3D",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"a\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Walk3D::Walk3D::SimulateMoveLeftKey"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Walk3D",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"d\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Walk3D::Walk3D::SimulateMoveRightKey"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Walk3D",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"o\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MousePointerLock::RequestPointerLock"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"p\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MousePointerLock::ExitPointerLock"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "MouseWheelDeltaVar",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardSelected",
+                    "-",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "MouseWheelDeltaVar",
+                    "<",
+                    "-1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardSelected",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"ReloadTime\"",
+                    ">=",
+                    "0.5"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardSelected",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[0]",
+                        "!=",
+                        "\"0\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[0]",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "DiscardCount",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardSelected",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[1]",
+                        "!=",
+                        "\"0\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[1]",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "DiscardCount",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardSelected",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[2]",
+                        "!=",
+                        "\"0\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[2]",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "DiscardCount",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardSelected",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[3]",
+                        "!=",
+                        "\"0\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[3]",
+                        "=",
+                        "\"0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "DiscardCount",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "ReloadAndReshuffle",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"ReloadTime\"",
+                    "<",
+                    "0.5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "CardSlots",
+                    "\"163;163;163\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"ReloadTime\"",
+                    "<",
+                    "0.5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "CardSlots",
+                    "\"255;255;255\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.BasicShot",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.BigShot",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.SniperShot",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.Dash",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.Heal",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardHand[0]",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardHand[1]",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardHand[2]",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardHand[3]",
+                    "=",
+                    "\"0\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReshuffleTime\"",
+                        ">",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "CardSlots",
+                        "\"24;24;24\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReshuffleTime\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"ReshuffleTime\"",
+                    ">",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "CardSlots",
+                    "\"255;255;255\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.BasicShot",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.BigShot",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.SniperShot",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.Dash",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.Heal",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DiscardCount",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckCount",
+                    "=",
+                    "16"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "WhichCardNext",
+                    "=",
+                    "RandomInRange(0,4)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "CardStuff",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "CardSelect",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardSelected",
+                        ">=",
+                        "4"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardSelected",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardSelected",
+                        "<=",
+                        "-1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardSelected",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "CardSlots",
+                        "CardPosition",
+                        "=",
+                        "Player.CardSelected"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "CardSlots",
+                        "Animation",
+                        "=",
+                        "\"Selected\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "CardSlots",
+                        "CardPosition",
+                        "!=",
+                        "Player.CardSelected"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "CardSlots",
+                        "Animation",
+                        "=",
+                        "\"Unselected\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "CardHand",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "WhichCardNext",
+                        "=",
+                        "RandomInRange(0,4)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[0]",
+                        "=",
+                        "\"0\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "WhichCardNext",
+                        "=",
+                        "RandomInRange(0,4)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[0]",
+                                "=",
+                                "\"BasicShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[0]",
+                                "=",
+                                "\"BigShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[0]",
+                                "=",
+                                "\"SniperShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "3"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[0]",
+                                "=",
+                                "\"Dash\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "4"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[0]",
+                                "=",
+                                "\"Heal\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[1]",
+                        "=",
+                        "\"0\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "WhichCardNext",
+                        "=",
+                        "RandomInRange(0,4)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[1]",
+                                "=",
+                                "\"BasicShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[1]",
+                                "=",
+                                "\"BigShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[1]",
+                                "=",
+                                "\"SniperShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "3"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[1]",
+                                "=",
+                                "\"Dash\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "4"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[1]",
+                                "=",
+                                "\"Heal\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[2]",
+                        "=",
+                        "\"0\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "WhichCardNext",
+                        "=",
+                        "RandomInRange(0,4)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[2]",
+                                "=",
+                                "\"BasicShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[2]",
+                                "=",
+                                "\"BigShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[2]",
+                                "=",
+                                "\"SniperShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "3"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[2]",
+                                "=",
+                                "\"Dash\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "4"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[2]",
+                                "=",
+                                "\"Heal\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardHand[3]",
+                        "=",
+                        "\"0\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "WhichCardNext",
+                        "=",
+                        "RandomInRange(0,4)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[3]",
+                                "=",
+                                "\"BasicShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BasicShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[3]",
+                                "=",
+                                "\"BigShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.BigShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[3]",
+                                "=",
+                                "\"SniperShot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.SniperShot",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "3"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[3]",
+                                "=",
+                                "\"Dash\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Dash",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "WhichCardNext",
+                            "=",
+                            "4"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                ">",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "Player",
+                                "CardHand[3]",
+                                "=",
+                                "\"Heal\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                "-",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckCount",
+                                "-",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "DeckPile.Heal",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Player",
+                                "WhichCardNext",
+                                "=",
+                                "RandomInRange(0,4)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "perspective",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Object3D",
+      "type": "Scene3D::Base3DBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Walk3D",
+      "type": "Walk3D::Walk3D",
+      "Cos": 0,
+      "Sin": 0
+    }
+  ]
+}

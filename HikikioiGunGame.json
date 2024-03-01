@@ -1,0 +1,197 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": true,
+    "projectUuid": "86bd272c-c561-4de2-9665-3f0d539bd2db",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Mind Game",
+    "description": "",
+    "author": "",
+    "windowWidth": 640,
+    "windowHeight": 360,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.3,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New3DBox_Front.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New3DBox_Front",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/New3DBox_Front.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\New3DBox_Front.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/WhiteBox.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Visuals/WhiteBox.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\Visuals\\WhiteBox.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Crosshair.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Crosshair",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Crosshair2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Crosshair2.png\"}",
+        "name": "Crosshair2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/CardSlots.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CardSlots",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Selected.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Selected",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/CardSlots.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\CardSlots.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/Selected.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\Selected.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/Crosshair2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\Crosshair2.png",
+        "smoothed": false,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/untitled-scene"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/mousepointerlock"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/walk3d"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/topdowncornersliding"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/thirdpersoncamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firstpersoncamera"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
