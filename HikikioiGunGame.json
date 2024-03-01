@@ -241,6 +241,24 @@
         "name": "assets\\Visuals\\Dot Bar Green Border.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New3DBox_Front3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New3DBox_Front3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/New3DBox_Front3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\New3DBox_Front3.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

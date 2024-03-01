@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0937500000000027,
+    "zoomFactor": 0.9266223649027971,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -383,6 +383,21 @@
       "x": 8,
       "y": 8,
       "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Boss",
+      "persistentUuid": "7cd281b9-8be9-4ef2-8dcf-2b3c0611feee",
+      "width": 0,
+      "x": 660,
+      "y": 140,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1234,6 +1249,76 @@
         "bottomFaceResourceRepeat": false,
         "materialType": "Basic"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "SniperBullet",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 8,
+        "height": 8,
+        "depth": 8,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "backFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "rightFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "topFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "bottomFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Boss",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 100,
+        "height": 100,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front3.png",
+        "backFaceResourceName": "assets\\Visuals\\New3DBox_Front3.png",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets\\Visuals\\New3DBox_Front3.png",
+        "rightFaceResourceName": "assets\\Visuals\\New3DBox_Front3.png",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1250,6 +1335,9 @@
           },
           {
             "objectName": "BigBullet"
+          },
+          {
+            "objectName": "SniperBullet"
           }
         ]
       },
@@ -1290,6 +1378,9 @@
       },
       {
         "objectName": "Floor"
+      },
+      {
+        "objectName": "Boss"
       }
     ]
   },
@@ -1512,7 +1603,18 @@
             "BigBullet",
             "Object3D",
             "=",
-            "80"
+            "60"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "SniperBullet",
+            "Object3D",
+            "=",
+            "90"
           ]
         }
       ]
@@ -1610,6 +1712,45 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"q\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "HP",
+                    "-",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Delete/Deactivate controls above this"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -4934,7 +5075,23 @@
                       "parameters": []
                     }
                   ],
-                  "actions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::Fire"
+                      },
+                      "parameters": [
+                        "Player",
+                        "FireBullet",
+                        "Player.X()",
+                        "Player.Y()+3",
+                        "SniperBullet",
+                        "Player.Angle()",
+                        "2048",
+                        ""
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -4968,7 +5125,26 @@
                       "parameters": []
                     }
                   ],
-                  "actions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"DashTime\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"DashInvincTime\""
+                      ]
+                    }
+                  ]
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -5002,7 +5178,178 @@
                       "parameters": []
                     }
                   ],
-                  "actions": []
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "HP",
+                        "+",
+                        "2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Dash",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"DashTime\"",
+                            "<",
+                            "0.6"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetTranslationAcceleration"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            "=",
+                            "5000",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetTranslationDeceleration"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            "=",
+                            "5000",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetTranslationSpeedMax"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            "=",
+                            "900",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"DashTime\"",
+                            ">=",
+                            "0.6"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetTranslationAcceleration"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            "=",
+                            "2400",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetTranslationDeceleration"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            "=",
+                            "1600",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SetTranslationSpeedMax"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            "=",
+                            "400",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"DashInvincTime\"",
+                            "<",
+                            "0.7"
+                          ]
+                        }
+                      ],
+                      "actions": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"DashInvincTime\"",
+                            ">=",
+                            "0.7"
+                          ]
+                        }
+                      ],
+                      "actions": []
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": []
+                    }
+                  ],
+                  "parameters": []
                 }
               ],
               "parameters": []
