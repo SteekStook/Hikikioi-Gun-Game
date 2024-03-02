@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.2081677499977759,
+    "zoomFactor": 0.8963956090820728,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -82,7 +82,7 @@
       "width": 16,
       "x": 112,
       "y": 160,
-      "z": 100,
+      "z": 1,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -430,8 +430,7 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
+      "customSize": false,
       "height": 360,
       "layer": "UI",
       "name": "ScreenFlash",
@@ -641,6 +640,25 @@
           "ExponentialCoolingRate": 0.3,
           "BulletLayer": "",
           "RandomizedAngle": 0
+        },
+        {
+          "name": "Jump3D",
+          "type": "Jump3D::Jump3D",
+          "Object3D": "Object3D",
+          "JumpHeight": 150,
+          "MaxFallingSpeed": 700,
+          "Gravity": 1000,
+          "JumpSpeed": 600,
+          "JumpSustainDurationMax": 0.2,
+          "State": "Idle",
+          "CurrentJumpSpeed": 0.19999992847454,
+          "CurrentFallSpeed": 0.19999992847454,
+          "PreviousJumpSpeed": 0.19999992847454,
+          "PreviousFallSpeed": 0.19999992847454,
+          "HasPressedJumpKey": false,
+          "CanJump": true,
+          "ShouldStopAtZero": false,
+          "PreviousState": "Idle"
         },
         {
           "name": "Walk3D",
@@ -1652,6 +1670,18 @@
         },
         {
           "type": {
+            "value": "Scene3D::SetCameraZ"
+          },
+          "parameters": [
+            "",
+            "=",
+            "Player.Object3D::Z() + 100",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Scene3D::Base3DBehavior::SetRotationY"
           },
           "parameters": [
@@ -1680,6 +1710,18 @@
             "Player",
             "+",
             "MousePointerLock::MovementX() / 6"
+          ]
+        },
+        {
+          "type": {
+            "value": "Jump3D::Jump3D::SeparateFromPlatforms"
+          },
+          "parameters": [
+            "Player",
+            "Jump3D",
+            "Floor",
+            "Object3D",
+            ""
           ]
         },
         {
@@ -1959,6 +2001,32 @@
                     "Phase",
                     "=",
                     "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Jump3D::Jump3D::SimulateJumpKey"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Jump3D",
+                    ""
                   ]
                 }
               ]
@@ -9606,6 +9674,10 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Jump3D",
+      "type": "Jump3D::Jump3D"
     },
     {
       "name": "Object3D",
