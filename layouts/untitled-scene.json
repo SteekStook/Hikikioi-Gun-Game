@@ -2564,52 +2564,8 @@
                   },
                   "parameters": [
                     "Player",
-                    "DeckPile.BasicShot",
-                    "<=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "Player",
-                    "DeckPile.BigShot",
-                    "<=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "Player",
-                    "DeckPile.SniperShot",
-                    "<=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "Player",
-                    "DeckPile.Dash",
-                    "<=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "Player",
-                    "DeckPile.Heal",
-                    "<=",
+                    "DeckCount",
+                    "=",
                     "0"
                   ]
                 },
@@ -2741,39 +2697,6 @@
                         "Phase",
                         "=",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Player",
-                        "DeckPile.AbHeal",
-                        "<=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Player",
-                        "DeckPile.HurtBlind",
-                        "<=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Player",
-                        "DeckPile.ParaJump",
-                        "<=",
-                        "0"
                       ]
                     }
                   ],
@@ -3068,7 +2991,7 @@
                       },
                       "parameters": [
                         "Player",
-                        "DeckPile.HurtBlind",
+                        "DeckPile.AbHurtBlind",
                         "=",
                         "2"
                       ]
@@ -3079,7 +3002,7 @@
                       },
                       "parameters": [
                         "Player",
-                        "DeckPile.ParaJump",
+                        "DeckPile.AbParaJump",
                         "=",
                         "1"
                       ]
@@ -3970,7 +3893,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckPile.BasicShot",
+                                    "DeckCount",
                                     "-",
                                     "1"
                                   ]
@@ -3981,7 +3904,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckCount",
+                                    "DeckPile.BasicShot",
                                     "-",
                                     "1"
                                   ]
@@ -4069,7 +3992,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckPile.BigShot",
+                                    "DeckCount",
                                     "-",
                                     "1"
                                   ]
@@ -4080,7 +4003,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckCount",
+                                    "DeckPile.BigShot",
                                     "-",
                                     "1"
                                   ]
@@ -4173,7 +4096,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckPile.SniperShot",
+                                    "DeckCount",
                                     "-",
                                     "1"
                                   ]
@@ -4184,7 +4107,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckCount",
+                                    "DeckPile.SniperShot",
                                     "-",
                                     "1"
                                   ]
@@ -4272,7 +4195,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckPile.Dash",
+                                    "DeckCount",
                                     "-",
                                     "1"
                                   ]
@@ -4283,7 +4206,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckCount",
+                                    "DeckPile.Dash",
                                     "-",
                                     "1"
                                   ]
@@ -4371,7 +4294,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckPile.Heal",
+                                    "DeckCount",
                                     "-",
                                     "1"
                                   ]
@@ -4382,7 +4305,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckCount",
+                                    "DeckPile.Heal",
                                     "-",
                                     "1"
                                   ]
@@ -4470,7 +4393,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckPile.AbHeal",
+                                    "DeckCount",
                                     "-",
                                     "1"
                                   ]
@@ -4481,7 +4404,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckCount",
+                                    "DeckPile.AbHeal",
                                     "-",
                                     "1"
                                   ]
@@ -4569,7 +4492,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckPile.AbHurtBlind",
+                                    "DeckCount",
                                     "-",
                                     "1"
                                   ]
@@ -4580,7 +4503,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckCount",
+                                    "DeckPile.AbHurtBlind",
                                     "-",
                                     "1"
                                   ]
@@ -4668,7 +4591,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckPile.AbParaJump",
+                                    "DeckCount",
                                     "-",
                                     "1"
                                   ]
@@ -4679,7 +4602,7 @@
                                   },
                                   "parameters": [
                                     "Player",
-                                    "DeckCount",
+                                    "DeckPile.AbParaJump",
                                     "-",
                                     "1"
                                   ]
@@ -9493,7 +9416,7 @@
                             "ScreenFlash",
                             "Opacity",
                             "=",
-                            "200"
+                            "240"
                           ]
                         }
                       ]
