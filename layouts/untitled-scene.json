@@ -74,12 +74,12 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 16,
-      "height": 16,
+      "depth": 32,
+      "height": 32,
       "layer": "",
       "name": "Player",
       "persistentUuid": "4b465bd1-f9c6-48d5-991a-ee908534d50a",
-      "width": 16,
+      "width": 32,
       "x": 112,
       "y": 160,
       "z": 1,
@@ -645,7 +645,7 @@
           "name": "Jump3D",
           "type": "Jump3D::Jump3D",
           "Object3D": "Object3D",
-          "JumpHeight": 150,
+          "JumpHeight": 450,
           "MaxFallingSpeed": 700,
           "Gravity": 1000,
           "JumpSpeed": 600,
@@ -916,7 +916,7 @@
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -1121,7 +1121,7 @@
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -1162,7 +1162,7 @@
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -1622,6 +1622,14 @@
         },
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Player"
+          ]
+        },
+        {
+          "type": {
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
@@ -2006,6 +2014,7 @@
               ]
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2048,101 +2057,120 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"w\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Walk3D::Walk3D::SimulateMoveForwardKey"
+                    "inverted": true,
+                    "value": "Jump3D::Jump3D::IsJumping"
                   },
                   "parameters": [
                     "Player",
-                    "Walk3D",
+                    "Jump3D",
                     ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"s\""
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "Walk3D::Walk3D::SimulateMoveBackwardKey"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Walk3D",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"w\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SimulateMoveForwardKey"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Walk3D",
+                        ""
+                      ]
+                    }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"a\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"s\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SimulateMoveBackwardKey"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Walk3D",
+                        ""
+                      ]
+                    }
                   ]
-                }
-              ],
-              "actions": [
+                },
                 {
-                  "type": {
-                    "value": "Walk3D::Walk3D::SimulateMoveLeftKey"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Walk3D",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"a\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SimulateMoveLeftKey"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Walk3D",
+                        ""
+                      ]
+                    }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"d\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Walk3D::Walk3D::SimulateMoveRightKey"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Walk3D",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"d\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Walk3D::Walk3D::SimulateMoveRightKey"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Walk3D",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2247,6 +2275,17 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Jump3D::Jump3D::IsJumping"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Jump3D",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "MouseButtonFromTextReleased"
@@ -2564,6 +2603,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "ReloadAndReshuffle",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3258,6 +3298,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardHand",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -8904,8 +8945,8 @@
                       "parameters": [
                         "Player",
                         "FireBullet",
-                        "Player.X()",
-                        "Player.Y()",
+                        "Player.X()+8",
+                        "Player.Y()+8",
                         "BasicBullet",
                         "Player.Angle()",
                         "1024",
@@ -8954,8 +8995,8 @@
                       "parameters": [
                         "Player",
                         "FireBullet",
-                        "Player.X()",
-                        "Player.Y() -24",
+                        "Player.X()-16",
+                        "Player.Y()-16",
                         "BigBullet",
                         "Player.Angle()",
                         "256",
@@ -9004,8 +9045,8 @@
                       "parameters": [
                         "Player",
                         "FireBullet",
-                        "Player.X()",
-                        "Player.Y()+3",
+                        "Player.X()+12",
+                        "Player.Y()+11",
                         "SniperBullet",
                         "Player.Angle()",
                         "2304",
@@ -9224,6 +9265,51 @@
                   ]
                 },
                 {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "\"AbParaJump\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Jump3D::Jump3D::SimulateJumpKey"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Jump3D",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
                   "colorB": 228,
                   "colorG": 176,
                   "colorR": 74,
@@ -9388,6 +9474,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "AbHeal",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -9456,6 +9543,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "AbHurtBlind",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
