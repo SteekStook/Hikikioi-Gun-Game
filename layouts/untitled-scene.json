@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.1687568821481882,
+    "zoomFactor": 1.2081677499977759,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -427,6 +427,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 360,
+      "layer": "UI",
+      "name": "ScreenFlash",
+      "persistentUuid": "d667c3a2-df86-475a-943c-72bb14943521",
+      "width": 640,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -505,6 +521,12 @@
           "name": "DiscardCount",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "TakeDoubleDmg",
+          "type": "boolean",
+          "value": false
         },
         {
           "name": "CardHand",
@@ -1403,6 +1425,82 @@
         "bottomFaceResourceRepeat": false,
         "materialType": "Basic"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ScreenFlash",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashOpacity",
+          "type": "Flash::FlashOpacity",
+          "TweenBehavior": "Tween",
+          "HalfPeriodTime": 1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TargetOpacity": 0,
+          "StartingOpacity": 2.0247e-320
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "ScreenFlash",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "ScreenFlash",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1465,6 +1563,9 @@
       },
       {
         "objectName": "Boss"
+      },
+      {
+        "objectName": "ScreenFlash"
       }
     ]
   },
@@ -1510,6 +1611,17 @@
             "Opacity",
             "=",
             "200"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "ScreenFlash",
+            "Opacity",
+            "=",
+            "0"
           ]
         },
         {
@@ -1599,7 +1711,7 @@
             "DebugText",
             "Text",
             "=",
-            "Player.DeckPile.AbHeal"
+            "Player.DeckPile.BasicShot"
           ]
         },
         {
@@ -1833,7 +1945,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"r\""
+                    "\"e\""
                   ]
                 }
               ],
@@ -2384,7 +2496,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "ReloadAndReshuffle",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2778,7 +2889,7 @@
                         "Player",
                         "DeckPile.BasicShot",
                         "=",
-                        "3"
+                        "4"
                       ]
                     },
                     {
@@ -2789,7 +2900,7 @@
                         "Player",
                         "DeckPile.BigShot",
                         "=",
-                        "4"
+                        "3"
                       ]
                     },
                     {
@@ -2893,7 +3004,7 @@
                         "Player",
                         "DeckPile.BasicShot",
                         "=",
-                        "3"
+                        "4"
                       ]
                     },
                     {
@@ -2904,7 +3015,7 @@
                         "Player",
                         "DeckPile.BigShot",
                         "=",
-                        "4"
+                        "3"
                       ]
                     },
                     {
@@ -3003,7 +3114,7 @@
                         "Player",
                         "WhichCardNext",
                         "=",
-                        "RandomInRange(0,4)"
+                        "RandomInRange(0,7)"
                       ]
                     }
                   ]
@@ -3781,7 +3892,6 @@
                       ]
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -8759,7 +8869,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "CardActions",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -8908,7 +9017,7 @@
                         "Player.Y()+3",
                         "SniperBullet",
                         "Player.Angle()",
-                        "2048",
+                        "2304",
                         ""
                       ]
                     }
@@ -9009,6 +9118,116 @@
                         "HP",
                         "+",
                         "2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "\"AbHeal\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "HP",
+                        "+",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"TakeDoubleDmg\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "Player",
+                        "CardAction",
+                        "=",
+                        "\"AbHurtBlind\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.01"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "HP",
+                        "-",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"AbHurtBlindTimer\""
                       ]
                     }
                   ]
@@ -9172,6 +9391,144 @@
                     }
                   ],
                   "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "AbHeal",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"TakeDoubleDmg\"",
+                            "<",
+                            "1.5"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Player",
+                            "TakeDoubleDmg",
+                            "True"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"TakeDoubleDmg\"",
+                            ">=",
+                            "1.5"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Player",
+                            "TakeDoubleDmg",
+                            "False"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "AbHurtBlind",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"AbHurtBlindTimer\"",
+                            "<",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "ScreenFlash",
+                            "Opacity",
+                            "=",
+                            "200"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"AbHurtBlindTimer\"",
+                            ">=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "ScreenFlash",
+                            "Opacity",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
                 }
               ],
               "parameters": []
@@ -9273,7 +9630,7 @@
       "isLocked": false,
       "name": "",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [
         {
           "defaultSize": true,
@@ -9320,6 +9677,10 @@
       "type": "FireBullet::FireBullet"
     },
     {
+      "name": "FlashOpacity",
+      "type": "Flash::FlashOpacity"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -9342,6 +9703,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     },
     {
       "name": "Walk3D",
