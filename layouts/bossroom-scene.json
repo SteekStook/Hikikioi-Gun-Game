@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.31017149103186487,
+    "zoomFactor": 0.8963956090820886,
     "windowMask": false
   },
   "objectsGroups": [
@@ -260,8 +260,8 @@
       "name": "DebugText",
       "persistentUuid": "87c9e832-cc1c-4b8b-978e-369e9ab2d8b8",
       "width": 0,
-      "x": 72,
-      "y": 12,
+      "x": 24,
+      "y": 88,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -364,7 +364,7 @@
       "depth": 32,
       "height": 16,
       "layer": "UI",
-      "name": "GreenDotBar",
+      "name": "PlayerHealthBar",
       "persistentUuid": "30c10095-8c6a-4976-81ae-9c83a09e2538",
       "width": 118,
       "x": 261,
@@ -494,8 +494,8 @@
       "name": "DebugText2",
       "persistentUuid": "36b1db6f-c2ca-46b0-a7bd-76a4423978b1",
       "width": 0,
-      "x": 120,
-      "y": 8,
+      "x": 9,
+      "y": 152,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -513,6 +513,22 @@
       "x": 1952,
       "y": 880,
       "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 24,
+      "layer": "UI",
+      "name": "BossHealthBar",
+      "persistentUuid": "d14bec09-e5ab-465c-a31c-3044c3e6e2fd",
+      "width": 544,
+      "x": 48,
+      "y": 8,
+      "zOrder": 28,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1257,7 +1273,7 @@
     },
     {
       "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
-      "name": "GreenDotBar",
+      "name": "PlayerHealthBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variables": [],
       "effects": [],
@@ -2111,6 +2127,92 @@
         "bottomFaceResourceRepeat": false,
         "materialType": "Basic"
       }
+    },
+    {
+      "assetStoreId": "45827f5ecff9d1cc17847c948a055323dbd4ca63159a0ed696d49ddf18bd071e",
+      "name": "BossHealthBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "InitialValue": 100,
+        "MaxValue": 100
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 26,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "assets\\Visuals\\Dot Bar Green Border.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 118
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 19,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 21
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 19,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 21
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "2 / 3",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "2 / 3",
+            "font": "",
+            "textAlignment": "",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2166,7 +2268,10 @@
         "folderName": "UI",
         "children": [
           {
-            "objectName": "GreenDotBar"
+            "objectName": "PlayerHealthBar"
+          },
+          {
+            "objectName": "BossHealthBar"
           },
           {
             "objectName": "Crosshair"
@@ -2290,6 +2395,24 @@
         },
         {
           "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"DmgInvincTime\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"DashInvincTime\""
+          ]
+        },
+        {
+          "type": {
             "value": "Scene3D::Base3DBehavior::SetDepth"
           },
           "parameters": [
@@ -2387,9 +2510,20 @@
             "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
           },
           "parameters": [
-            "GreenDotBar",
+            "PlayerHealthBar",
             "=",
             "Player.HP",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "BossHealthBar",
+            "=",
+            "Boss.HP",
             ""
           ]
         },
@@ -2401,7 +2535,7 @@
             "DebugText",
             "Text",
             "=",
-            "Boss.WhichActionNext"
+            "ToString(Player.ObjectTimerElapsedTime(\"DashInvincTime\"))"
           ]
         },
         {
@@ -2616,7 +2750,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3352,6 +3485,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "ReloadAndReshuffle",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3909,7 +4043,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "CardStuff",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10064,7 +10197,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Dash",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -10187,8 +10319,8 @@
                           "parameters": [
                             "Player",
                             "\"DashInvincTime\"",
-                            "<",
-                            "0.7"
+                            ">",
+                            "1"
                           ]
                         }
                       ],
@@ -10204,8 +10336,8 @@
                           "parameters": [
                             "Player",
                             "\"DashInvincTime\"",
-                            ">=",
-                            "0.7"
+                            "<=",
+                            "1"
                           ]
                         }
                       ],
@@ -10364,6 +10496,133 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "BulletCollisions",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "BasicBullet",
+                    "Boss",
+                    "108",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "BasicBullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "HP",
+                    "-",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "BigBullet",
+                    "Boss",
+                    "108",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "BigBullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "HP",
+                    "-",
+                    "5"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "SniperBullet",
+                    "Boss",
+                    "108",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "SniperBullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "HP",
+                    "-",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "parameters": []
@@ -10470,6 +10729,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "BossActions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11244,9 +11504,212 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "BossBasicBullet",
+                "Player",
+                "64",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DmgInvincTime\"",
+                ">",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DashInvincTime\"",
+                ">",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BossBasicBullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Player",
+                "HP",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DmgInvincTime\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "BossTurretBullets",
+                "Player",
+                "64",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DmgInvincTime\"",
+                ">",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DashInvincTime\"",
+                ">",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BossTurretBullets",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Player",
+                "HP",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DmgInvincTime\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "BossGSpike",
+                "Player",
+                "64",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DmgInvincTime\"",
+                ">",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DashInvincTime\"",
+                ">",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Player",
+                "HP",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"DmgInvincTime\""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
