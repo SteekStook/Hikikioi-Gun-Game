@@ -299,6 +299,24 @@
         "name": "BasicBullet2_Front",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicBullet2_Front2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "BasicBullet2_Front2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/BasicBullet2_Front2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\BasicBullet2_Front2.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

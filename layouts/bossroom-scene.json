@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8115037811887776,
+    "zoomFactor": 0.8963956090820878,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -59,11 +59,11 @@
       "angle": 0,
       "customSize": true,
       "depth": 2,
-      "height": 1280,
+      "height": 1920,
       "layer": "",
       "name": "Floor",
       "persistentUuid": "e73c288d-5e8c-46ce-9b0e-b3cf0a14b907",
-      "width": 1280,
+      "width": 1920,
       "x": 0,
       "y": 0,
       "zOrder": 1,
@@ -80,8 +80,8 @@
       "name": "Player",
       "persistentUuid": "4b465bd1-f9c6-48d5-991a-ee908534d50a",
       "width": 32,
-      "x": 64,
-      "y": 624,
+      "x": 128,
+      "y": 944,
       "z": 2,
       "zOrder": 2,
       "numberProperties": [],
@@ -377,8 +377,8 @@
       "name": "Boss",
       "persistentUuid": "17196d45-fb42-46b2-962a-0270e3aeb06b",
       "width": 100,
-      "x": 1120,
-      "y": 440,
+      "x": 1696,
+      "y": 760,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -405,12 +405,12 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1312,
+      "height": 1952,
       "layer": "",
       "name": "BoundaryBox",
       "persistentUuid": "f42e4f39-2575-46f8-bb73-3fda076ce0d0",
       "width": 16,
-      "x": 1280,
+      "x": 1920,
       "y": -16,
       "zOrder": 22,
       "numberProperties": [],
@@ -421,7 +421,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1312,
+      "height": 1952,
       "layer": "",
       "name": "BoundaryBox",
       "persistentUuid": "fb32ee8a-a05e-415a-8c10-dbbe03896601",
@@ -441,9 +441,9 @@
       "layer": "",
       "name": "BoundaryBox",
       "persistentUuid": "deb7429a-a091-4ede-8b3e-cc2596dd6666",
-      "width": 1280,
+      "width": 1920,
       "x": 0,
-      "y": 1280,
+      "y": 1920,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -457,25 +457,10 @@
       "layer": "",
       "name": "BoundaryBox",
       "persistentUuid": "4ac82552-f745-4a1a-80d7-ec01059659fc",
-      "width": 1280,
+      "width": 1920,
       "x": 0,
       "y": -16,
       "zOrder": 22,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "BasicBullet",
-      "persistentUuid": "8cdd7d65-5781-4f6b-90cc-5312506f6a3d",
-      "width": 0,
-      "x": 1360,
-      "y": 992,
-      "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -491,6 +476,22 @@
       "x": 120,
       "y": 8,
       "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 10,
+      "height": 64,
+      "layer": "",
+      "name": "BossTurret",
+      "persistentUuid": "7e147c99-0f73-496b-8751-21d5d426f187",
+      "width": 64,
+      "x": 1952,
+      "y": 880,
+      "zOrder": 27,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1432,6 +1433,8 @@
           "Topdown": "TopDownMovement"
         },
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1441,9 +1444,7 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 200,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": true,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
         }
       ],
@@ -1523,6 +1524,12 @@
         },
         {
           "folded": true,
+          "name": "DirectShot",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
           "name": "AberCards",
           "type": "structure",
           "children": [
@@ -1560,27 +1567,27 @@
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.5,
+          "FireCooldown": 1.25,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 180,
-          "BulletQuantity": 8,
+          "BulletQuantity": 16,
           "AngleVariance": 0,
           "BulletSpeedVariance": 0,
           "AmmoQuantity": 0,
-          "ShotsPerReload": 4,
+          "ShotsPerReload": 0,
           "ReloadDuration": 0,
-          "MaxAmmo": 4,
+          "MaxAmmo": 0,
           "ShotsBeforeNextReload": 0,
           "TotalShotsFired": 0,
           "TotalBulletsCreated": 0,
-          "StartingAmmo": 4,
+          "StartingAmmo": 0,
           "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": false,
+          "UnlimitedAmmo": true,
           "ReloadInProgress": false,
           "HeatIncreasePerShot": 0,
           "HeatLevel": 0,
-          "AutomaticReloading": false,
+          "AutomaticReloading": true,
           "OverheatDuration": 0,
           "LinearCoolingRate": 0.1,
           "ExponentialCoolingRate": 0.3,
@@ -1958,6 +1965,131 @@
         "bottomFaceResourceRepeat": false,
         "materialType": "Basic"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "BossTurretBullets",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [
+        {
+          "folded": true,
+          "name": "JustCreated",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
+      "content": {
+        "width": 24,
+        "height": 24,
+        "depth": 24,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\BasicBullet2_Front2.png",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "BossTurret",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        },
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.01,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 8,
+          "ReloadDuration": 0.4,
+          "MaxAmmo": 8,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 8,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "content": {
+        "width": 64,
+        "height": 64,
+        "depth": 64,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "BasicBullet2_Front",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1977,6 +2109,12 @@
           },
           {
             "objectName": "BossGSpike"
+          },
+          {
+            "objectName": "BossTurretBullets"
+          },
+          {
+            "objectName": "BossTurret"
           }
         ]
       },
@@ -2368,6 +2506,17 @@
         },
         {
           "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "BossTurret",
+            "Object3D",
+            "=",
+            "300"
+          ]
+        },
+        {
+          "type": {
             "value": "MettreXY"
           },
           "parameters": [
@@ -2380,12 +2529,35 @@
         },
         {
           "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "BossTurret",
+            "=",
+            "Boss.X()",
+            "=",
+            "Boss.Y()+68"
+          ]
+        },
+        {
+          "type": {
             "value": "SeparateFromObjects"
           },
           "parameters": [
             "Player",
             "BoundaryBox",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ModVarObjet"
+          },
+          "parameters": [
+            "Boss",
+            "DirectShot",
+            "=",
+            "RandomInRange(0,1)"
           ]
         }
       ]
@@ -10354,7 +10526,7 @@
                             "Boss",
                             "JumpTargetPostion.X",
                             "=",
-                            "RandomFloatInRange(0,1180)"
+                            "RandomFloatInRange(0,1900)"
                           ]
                         },
                         {
@@ -10365,7 +10537,7 @@
                             "Boss",
                             "JumpTargetPostion.Y",
                             "=",
-                            "RandomFloatInRange(0,1088)"
+                            "RandomFloatInRange(0,1900)"
                           ]
                         },
                         {
@@ -10397,53 +10569,6 @@
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::SetBulletQuantityOp"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "=",
-                        "8",
-                        "BossBasicBullet"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::FireTowardObject"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "Boss.X()",
-                        "Boss.Y()+84",
-                        "BossBasicBullet",
-                        "Player",
-                        "1024",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.6"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::SetBulletQuantityOp"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "=",
-                        "9",
-                        "BossBasicBullet"
-                      ]
-                    },
                     {
                       "type": {
                         "value": "FireBullet::FireBullet::FireTowardObject"
@@ -10525,8 +10650,8 @@
                       "parameters": [
                         "",
                         "BossGSpike",
-                        "RandomFloatInRange(0,1180)",
-                        "RandomFloatInRange(0,1088)",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
                         ""
                       ]
                     },
@@ -10537,8 +10662,8 @@
                       "parameters": [
                         "",
                         "BossGSpike",
-                        "RandomFloatInRange(0,1180)",
-                        "RandomFloatInRange(0,1088)",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
                         ""
                       ]
                     },
@@ -10549,8 +10674,8 @@
                       "parameters": [
                         "",
                         "BossGSpike",
-                        "RandomFloatInRange(0,1180)",
-                        "RandomFloatInRange(0,1088)",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
                         ""
                       ]
                     },
@@ -10561,8 +10686,8 @@
                       "parameters": [
                         "",
                         "BossGSpike",
-                        "RandomFloatInRange(0,1180)",
-                        "RandomFloatInRange(0,1088)",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
                         ""
                       ]
                     },
@@ -10573,8 +10698,8 @@
                       "parameters": [
                         "",
                         "BossGSpike",
-                        "RandomFloatInRange(0,1180)",
-                        "RandomFloatInRange(0,1088)",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
                         ""
                       ]
                     },
@@ -10585,8 +10710,8 @@
                       "parameters": [
                         "",
                         "BossGSpike",
-                        "RandomFloatInRange(0,1180)",
-                        "RandomFloatInRange(0,1088)",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
                         ""
                       ]
                     },
@@ -10597,8 +10722,8 @@
                       "parameters": [
                         "",
                         "BossGSpike",
-                        "RandomFloatInRange(0,1180)",
-                        "RandomFloatInRange(0,1088)",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
                         ""
                       ]
                     },
@@ -10609,8 +10734,8 @@
                       "parameters": [
                         "",
                         "BossGSpike",
-                        "RandomFloatInRange(0,1180)",
-                        "RandomFloatInRange(0,1088)",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
                         ""
                       ]
                     },
@@ -10653,6 +10778,146 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "WhichActionNext",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::FireTowardObject"
+                      },
+                      "parameters": [
+                        "BossTurret",
+                        "FireBullet",
+                        "BossTurret.X()",
+                        "BossTurret.Y()+20",
+                        "BossTurretBullets",
+                        "Player",
+                        "2304",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "ActionCooldownTime",
+                        "=",
+                        "2.5"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"ActionCooldown\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "BasicShot",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "DirectShot",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "FireBullet",
+                            "=",
+                            "16",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "DirectShot",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "FireBullet",
+                            "=",
+                            "17",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
                 },
                 {
                   "colorB": 228,
@@ -10705,7 +10970,7 @@
                             "Object3D",
                             "\"GSpikeGoUpTw\"",
                             "0",
-                            "\"easeInOutBack\"",
+                            "\"easeOutBack\"",
                             "0.5",
                             "no"
                           ]
@@ -10767,119 +11032,111 @@
                   "parameters": []
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "WhichActionNext",
-                        "=",
-                        "3"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::SetBulletQuantityOp"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "=",
-                        "8",
-                        "BossBasicBullet"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::FireTowardObject"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "Boss.X()",
-                        "Boss.Y()+84",
-                        "BossBasicBullet",
-                        "Player",
-                        "1024",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.6"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::SetBulletQuantityOp"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "=",
-                        "9",
-                        "BossBasicBullet"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::FireTowardObject"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "Boss.X()",
-                        "Boss.Y()+84",
-                        "BossBasicBullet",
-                        "Player",
-                        "1024",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "ActionCooldownTime",
-                        "=",
-                        "2.5"
-                      ]
-                    }
-                  ],
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Turret",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "BuiltinCommonInstructions::Once"
+                            "value": "ObjectVariableAsBoolean"
                           },
-                          "parameters": []
+                          "parameters": [
+                            "BossTurretBullets",
+                            "JustCreated",
+                            "True"
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "value": "ResetObjectTimer"
+                            "value": "Scene3D::Base3DBehavior::SetZ"
                           },
                           "parameters": [
-                            "Boss",
-                            "\"ActionCooldown\""
+                            "BossTurretBullets",
+                            "Object3D",
+                            "=",
+                            "300"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "JustCreated",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "JustCreated",
+                            "False"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Base3DBehavior::SetZ"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "Object3D",
+                            "-",
+                            "50"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Base3DBehavior::Z"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "Object3D",
+                            "<=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Base3DBehavior::SetZ"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "Object3D",
+                            "=",
+                            "3"
                           ]
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "parameters": []
                 }
               ]
             },
@@ -10926,6 +11183,11 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
