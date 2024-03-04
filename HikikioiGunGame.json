@@ -13,7 +13,7 @@
     "folderProject": true,
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "pixelsRounding": true,
+    "pixelsRounding": false,
     "projectUuid": "86bd272c-c561-4de2-9665-3f0d539bd2db",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "",
@@ -77,7 +77,7 @@
         "alwaysLoaded": false,
         "file": "assets/Visuals/New3DBox_Front.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Visuals/New3DBox_Front.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "assets\\Visuals\\New3DBox_Front.png",
         "smoothed": false,
         "userAdded": true
@@ -281,6 +281,15 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Particles/c17e2d500015e598624b763f4942b26e3aac96efca094cd20257a61e15b27fcb_LightGlow.png",
           "name": "LightGlow.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PlayerShado2_Front.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "PlayerShado2_Front",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -292,6 +301,10 @@
   "objectsGroups": [],
   "variables": [],
   "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/bossroom-scene"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/untitled-scene"
