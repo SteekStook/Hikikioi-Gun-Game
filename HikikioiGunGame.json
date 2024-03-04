@@ -290,6 +290,15 @@
         "name": "PlayerShado2_Front",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BasicBullet2_Front.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "BasicBullet2_Front",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
