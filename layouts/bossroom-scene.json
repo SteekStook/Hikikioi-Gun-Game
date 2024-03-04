@@ -18,10 +18,31 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8963956090820878,
+    "zoomFactor": 0.31017149103186487,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Bullets",
+      "objects": [
+        {
+          "name": "BasicBullet"
+        },
+        {
+          "name": "BigBullet"
+        },
+        {
+          "name": "SniperBullet"
+        },
+        {
+          "name": "BossBasicBullet"
+        },
+        {
+          "name": "BossTurretBullets"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "folded": true,
@@ -2563,10 +2584,39 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Distance"
+          },
+          "parameters": [
+            "Bullets",
+            "Floor",
+            "2000",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Bullets",
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3859,6 +3909,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "CardStuff",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10852,6 +10903,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "BasicShot",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -11036,6 +11088,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Turret",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
