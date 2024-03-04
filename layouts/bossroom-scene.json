@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7106869117634058,
+    "zoomFactor": 0.5450719793545937,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -371,14 +371,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 200,
-      "height": 100,
+      "depth": 10,
+      "height": 200,
       "layer": "",
       "name": "Boss",
       "persistentUuid": "17196d45-fb42-46b2-962a-0270e3aeb06b",
       "width": 100,
       "x": 1120,
-      "y": 588,
+      "y": 440,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -1295,7 +1295,16 @@
       "type": "Scene3D::Cube3DObject",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
       "content": {
         "width": 16,
         "height": 16,
@@ -1311,10 +1320,10 @@
         "bottomFaceResourceName": "",
         "frontFaceVisible": true,
         "backFaceVisible": false,
-        "leftFaceVisible": true,
-        "rightFaceVisible": true,
-        "topFaceVisible": true,
-        "bottomFaceVisible": true,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
         "frontFaceResourceRepeat": false,
         "backFaceResourceRepeat": false,
         "leftFaceResourceRepeat": false,
@@ -1330,7 +1339,16 @@
       "type": "Scene3D::Cube3DObject",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
       "content": {
         "width": 64,
         "height": 64,
@@ -1346,10 +1364,10 @@
         "bottomFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
         "frontFaceVisible": true,
         "backFaceVisible": false,
-        "leftFaceVisible": true,
-        "rightFaceVisible": true,
-        "topFaceVisible": true,
-        "bottomFaceVisible": true,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
         "frontFaceResourceRepeat": false,
         "backFaceResourceRepeat": false,
         "leftFaceResourceRepeat": false,
@@ -1365,7 +1383,40 @@
       "type": "Scene3D::Cube3DObject",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        },
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown",
+          "Up": "w",
+          "Left": "a",
+          "Right": "d",
+          "Down": "s",
+          "Topdown": "TopDownMovement"
+        },
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": false,
+          "maxSpeed": 200,
+          "movementAngleOffset": 0,
+          "name": "TopDownMovement",
+          "rotateObject": true,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "TopDown"
+        }
+      ],
       "content": {
         "width": 8,
         "height": 8,
@@ -1381,10 +1432,10 @@
         "bottomFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
         "frontFaceVisible": true,
         "backFaceVisible": false,
-        "leftFaceVisible": true,
-        "rightFaceVisible": true,
-        "topFaceVisible": true,
-        "bottomFaceVisible": true,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
         "frontFaceResourceRepeat": false,
         "backFaceResourceRepeat": false,
         "leftFaceResourceRepeat": false,
@@ -1437,7 +1488,16 @@
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "Standing on Z axis"
+        }
+      ],
       "content": {
         "width": 100,
         "height": 100,
@@ -1617,10 +1677,21 @@
     "folderName": "__ROOT",
     "children": [
       {
+        "folderName": "BossStuff",
+        "children": [
+          {
+            "objectName": "Boss"
+          }
+        ]
+      },
+      {
         "folderName": "PlayerStuff",
         "children": [
           {
             "objectName": "Player"
+          },
+          {
+            "objectName": "PlayerShadow"
           },
           {
             "objectName": "BasicBullet"
@@ -1632,7 +1703,7 @@
             "objectName": "SniperBullet"
           },
           {
-            "objectName": "PlayerShadow"
+            "objectName": "ScreenFlash"
           }
         ]
       },
@@ -1673,12 +1744,6 @@
       },
       {
         "objectName": "Floor"
-      },
-      {
-        "objectName": "Boss"
-      },
-      {
-        "objectName": "ScreenFlash"
       },
       {
         "objectName": "BoundaryBox"
@@ -2744,7 +2809,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "ReloadAndReshuffle",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2805,6 +2869,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3301,7 +3366,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "CardStuff",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3440,6 +3504,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardHand",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9769,68 +9834,102 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Phase",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "VarObjet"
-              },
-              "parameters": [
-                "Boss",
-                "HP",
-                "<=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Boss",
-                "Phase",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarObjet"
-              },
-              "parameters": [
-                "Boss",
-                "Phase",
-                "=",
-                "1"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "HP",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "1"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Player",
-                "DeckCount",
-                "+",
-                "5"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckCount",
+                    "+",
+                    "5"
+                  ]
+                }
               ]
             }
-          ]
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []
@@ -9889,6 +9988,10 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
+      "name": "Billboard",
+      "type": "Billboard::Billboard"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
@@ -9917,6 +10020,10 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "RemapForTopdown",
+      "type": "BehaviorRemapper::RemapForTopdown"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
@@ -9927,6 +10034,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     },
     {
       "name": "Tween",
