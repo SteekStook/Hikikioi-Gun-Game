@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.926622364902814,
+    "zoomFactor": 1.0235568070420558,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1217,7 +1217,7 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "",
+      "font": "mononoki-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 20,
       "color": {
@@ -1240,7 +1240,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "",
+        "font": "mononoki-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 20,
         "color": "0;0;0"
@@ -1258,7 +1258,7 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "",
+      "font": "mononoki-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 20,
       "color": {
@@ -1281,7 +1281,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "",
+        "font": "mononoki-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 20,
         "color": "0;0;0"
@@ -2392,21 +2392,21 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "PauseText",
+      "name": "AddCardsToDeckText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Paused",
-      "font": "",
+      "string": "+3",
+      "font": "mononoki-Regular.ttf",
       "textAlignment": "left",
-      "characterSize": 20,
+      "characterSize": 16,
       "color": {
-        "b": 0,
+        "b": 66,
         "g": 0,
-        "r": 0
+        "r": 42
       },
       "content": {
         "bold": false,
@@ -2422,11 +2422,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Paused",
-        "font": "",
+        "text": "+3",
+        "font": "mononoki-Regular.ttf",
         "textAlignment": "left",
-        "characterSize": 20,
-        "color": "0;0;0"
+        "characterSize": 16,
+        "color": "42;0;66"
       }
     }
   ],
@@ -2525,7 +2525,7 @@
             "objectName": "DiscardCount"
           },
           {
-            "objectName": "PauseText"
+            "objectName": "AddCardsToDeckText"
           }
         ]
       },
@@ -2925,7 +2925,7 @@
           "parameters": [
             "BossTurret",
             "=",
-            "Boss.X()",
+            "Boss.X()+16",
             "=",
             "Boss.Y()+68"
           ]
@@ -10816,6 +10816,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "AbHurtBlind",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -10889,41 +10890,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "disabled": true,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                          },
-                          "parameters": [
-                            "ScreenFlash",
-                            "Tween",
-                            "\"ScreenFlashOn\"",
-                            "240",
-                            "\"easeOutCubic\"",
-                            "0.5",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
-                          },
-                          "parameters": [
-                            "ScreenFlash",
-                            "Tween",
-                            "\"ScreenFlashOn\"",
-                            "0",
-                            "\"easeOutCubic\"",
-                            "0.2",
-                            ""
-                          ]
-                        }
-                      ]
                     }
                   ],
                   "parameters": []
@@ -10939,6 +10905,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "BulletCollisions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11100,6 +11067,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Health",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11181,11 +11149,13 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Phase",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -11314,7 +11284,7 @@
                   "parameters": [
                     "BossAberBulletFirer",
                     "FireBullet",
-                    "Boss.X()",
+                    "Boss.X()+20",
                     "Boss.Y()+80",
                     "BossAberCardsBullet",
                     "Player",
@@ -11531,6 +11501,18 @@
                 },
                 {
                   "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "AddCardsToDeckText",
+                    "AddCardsToDeckText",
+                    "DeckCount.X()",
+                    "DeckCount.Y()-24",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -11557,6 +11539,73 @@
                     "HP",
                     "=",
                     "100"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "AddCardsToDeckText",
+                    "Opacity",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "AddCardsToDeckText",
+                    "270",
+                    "32",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "AddCardsToDeckText",
+                    "Opacity",
+                    "+",
+                    "-5"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::Value"
+                  },
+                  "parameters": [
+                    "AddCardsToDeckText",
+                    "Opacity",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "AddCardsToDeckText",
+                    "AddCardsToDeckText"
                   ]
                 }
               ]
@@ -12294,7 +12343,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -13443,6 +13491,17 @@
                     "Object3D",
                     "<",
                     "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::Base3DBehavior::Z"
+                  },
+                  "parameters": [
+                    "BossGSpike",
+                    "Object3D",
+                    ">",
+                    "-120"
                   ]
                 }
               ],
