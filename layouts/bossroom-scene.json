@@ -1277,7 +1277,15 @@
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        }
+      ],
       "content": {
         "BarTopPadding": 3,
         "BarLeftPadding": 4,
@@ -2134,7 +2142,15 @@
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        }
+      ],
       "content": {
         "BarTopPadding": 3,
         "BarLeftPadding": 4,
@@ -2219,29 +2235,6 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "folderName": "BossStuff",
-        "children": [
-          {
-            "objectName": "Boss"
-          },
-          {
-            "objectName": "BossBasicBullet"
-          },
-          {
-            "objectName": "BossGSpikeTrackerBullet"
-          },
-          {
-            "objectName": "BossGSpike"
-          },
-          {
-            "objectName": "BossTurretBullets"
-          },
-          {
-            "objectName": "BossTurret"
-          }
-        ]
-      },
-      {
         "folderName": "PlayerStuff",
         "children": [
           {
@@ -2261,6 +2254,29 @@
           },
           {
             "objectName": "ScreenFlash"
+          }
+        ]
+      },
+      {
+        "folderName": "BossStuff",
+        "children": [
+          {
+            "objectName": "Boss"
+          },
+          {
+            "objectName": "BossBasicBullet"
+          },
+          {
+            "objectName": "BossGSpikeTrackerBullet"
+          },
+          {
+            "objectName": "BossGSpike"
+          },
+          {
+            "objectName": "BossTurretBullets"
+          },
+          {
+            "objectName": "BossTurret"
           }
         ]
       },
@@ -10474,7 +10490,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "BulletCollisions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10484,12 +10499,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "Distance"
+                    "value": "CollisionNP"
                   },
                   "parameters": [
                     "BasicBullet",
                     "Boss",
                     "108",
+                    "",
                     ""
                   ]
                 }
@@ -10514,6 +10530,17 @@
                     "-",
                     "2"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "BossHealthBar",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
                 }
               ]
             },
@@ -10522,12 +10549,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "Distance"
+                    "value": "CollisionNP"
                   },
                   "parameters": [
                     "BigBullet",
                     "Boss",
                     "108",
+                    "",
                     ""
                   ]
                 }
@@ -10552,6 +10580,17 @@
                     "-",
                     "5"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "BossHealthBar",
+                    "Flash",
+                    "0.2",
+                    ""
+                  ]
                 }
               ]
             },
@@ -10560,12 +10599,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "Distance"
+                    "value": "CollisionNP"
                   },
                   "parameters": [
                     "SniperBullet",
                     "Boss",
                     "108",
+                    "",
                     ""
                   ]
                 }
@@ -10589,6 +10629,17 @@
                     "HP",
                     "-",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "BossHealthBar",
+                    "Flash",
+                    "0.2",
+                    ""
                   ]
                 }
               ]
@@ -11606,6 +11657,17 @@
             },
             {
               "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "PlayerHealthBar",
+                "Flash",
+                "0.8",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ResetObjectTimer"
               },
               "parameters": [
@@ -11675,6 +11737,17 @@
             },
             {
               "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "PlayerHealthBar",
+                "Flash",
+                "0.8",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ResetObjectTimer"
               },
               "parameters": [
@@ -11731,6 +11804,17 @@
                 "HP",
                 "-",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "PlayerHealthBar",
+                "Flash",
+                "0.8",
+                ""
               ]
             },
             {
@@ -11816,6 +11900,10 @@
     {
       "name": "FireBullet",
       "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "Flash",
+      "type": "Flash::Flash"
     },
     {
       "name": "FlashOpacity",
