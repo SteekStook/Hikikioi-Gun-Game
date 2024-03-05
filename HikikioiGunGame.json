@@ -295,7 +295,7 @@
         "alwaysLoaded": false,
         "file": "assets/BasicBullet2_Front.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/BasicBullet2_Front.png\"}",
         "name": "BasicBullet2_Front",
         "smoothed": false,
         "userAdded": true
@@ -317,6 +317,42 @@
         "name": "assets\\Visuals\\BasicBullet2_Front2.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/BasicBullet2_Front.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\BasicBullet2_Front.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/ScreenFlash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\ScreenFlash.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/PlayerShado2_Front.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\PlayerShado2_Front.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BossAberCardsBullet_Front.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "BossAberCardsBullet_Front",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

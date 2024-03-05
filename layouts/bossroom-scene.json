@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8963956090820886,
+    "zoomFactor": 0.8115037811887811,
     "windowMask": false
   },
   "objectsGroups": [
@@ -529,6 +529,22 @@
       "x": 48,
       "y": 8,
       "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 64,
+      "layer": "",
+      "name": "BossAberBulletFirer",
+      "persistentUuid": "4832cba8-7825-4bd2-9ec0-8afcb8c6b73b",
+      "width": 64,
+      "x": 328,
+      "y": -64,
+      "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1276,7 +1292,31 @@
       "name": "PlayerHealthBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glitch",
+          "name": "DoubleDmgEfct",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "blueX": 10,
+            "blueY": -4,
+            "direction": 0,
+            "fillMode": 0,
+            "greenX": 10,
+            "greenY": -4,
+            "minSize": 4,
+            "offset": 2,
+            "redX": 2,
+            "redY": 2,
+            "sampleSize": 512,
+            "slices": 5
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "average": true
+          }
+        }
+      ],
       "behaviors": [
         {
           "name": "Flash",
@@ -1704,7 +1744,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "ScreenFlash",
+                  "image": "assets\\Visuals\\ScreenFlash.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1757,7 +1797,7 @@
         "depth": 1,
         "enableTextureTransparency": true,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "PlayerShado2_Front",
+        "frontFaceResourceName": "assets\\Visuals\\PlayerShado2_Front.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
@@ -1836,7 +1876,7 @@
         "depth": 32,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "BasicBullet2_Front",
+        "frontFaceResourceName": "assets\\Visuals\\BasicBullet2_Front.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
@@ -1941,7 +1981,7 @@
         "depth": 32,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "BasicBullet2_Front",
+        "frontFaceResourceName": "assets\\Visuals\\BasicBullet2_Front.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
@@ -1989,7 +2029,7 @@
         "depth": 32,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "BasicBullet2_Front",
+        "frontFaceResourceName": "assets\\Visuals\\BasicBullet2_Front.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
@@ -2114,7 +2154,7 @@
         "depth": 64,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "BasicBullet2_Front",
+        "frontFaceResourceName": "assets\\Visuals\\BasicBullet2_Front.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
@@ -2229,6 +2269,124 @@
           }
         }
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "BossAberCardsBullet",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
+      "content": {
+        "width": 32,
+        "height": 32,
+        "depth": 32,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "BossAberCardsBullet_Front",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "BossAberBulletFirer",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        },
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 1,
+          "ReloadDuration": 0,
+          "MaxAmmo": 1,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 1,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": false,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": false,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "content": {
+        "width": 64,
+        "height": 64,
+        "depth": 64,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\BasicBullet2_Front.png",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2277,6 +2435,12 @@
           },
           {
             "objectName": "BossTurret"
+          },
+          {
+            "objectName": "BossAberBulletFirer"
+          },
+          {
+            "objectName": "BossAberCardsBullet"
           }
         ]
       },
@@ -2436,6 +2600,17 @@
             "Object3D",
             "=",
             "500"
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "ScreenFlash",
+            "Scale",
+            "=",
+            "10"
           ]
         }
       ]
@@ -2688,6 +2863,17 @@
         },
         {
           "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "BossAberCardsBullet",
+            "Object3D",
+            "=",
+            "80"
+          ]
+        },
+        {
+          "type": {
             "value": "MettreXY"
           },
           "parameters": [
@@ -2704,6 +2890,18 @@
           },
           "parameters": [
             "BossTurret",
+            "=",
+            "Boss.X()",
+            "=",
+            "Boss.Y()+68"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "BossAberBulletFirer",
             "=",
             "Boss.X()",
             "=",
@@ -2775,6 +2973,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Controls",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2902,9 +3101,9 @@
                   },
                   "parameters": [
                     "Boss",
-                    "Phase",
+                    "HP",
                     "=",
-                    "1"
+                    "0"
                   ]
                 }
               ]
@@ -2949,302 +3148,161 @@
               "comment": "Delete/Deactivate controls above this"
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "Jump3D::Jump3D::IsJumping"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Player",
-                    "Jump3D",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"w\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Walk3D::Walk3D::SimulateMoveForwardKey"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Walk3D",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"s\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Walk3D::Walk3D::SimulateMoveBackwardKey"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Walk3D",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"a\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Walk3D::Walk3D::SimulateMoveLeftKey"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Walk3D",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"d\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Walk3D::Walk3D::SimulateMoveRightKey"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Walk3D",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "MouseWheelDeltaVar",
-                    ">",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "Player",
-                    "CardSelected",
-                    "-",
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "MouseWheelDeltaVar",
-                    "<",
-                    "-1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "Player",
-                    "CardSelected",
-                    "+",
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Jump3D::Jump3D::IsJumping"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Jump3D",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MouseButtonFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Left\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CompareObjectTimer"
-                  },
-                  "parameters": [
-                    "Player",
-                    "\"ReloadTime\"",
-                    ">=",
-                    "0.5"
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                  "parameters": [],
+                  "subInstructions": [
                     {
                       "type": {
                         "value": "VarObjet"
                       },
                       "parameters": [
-                        "Player",
-                        "CardSelected",
+                        "Boss",
+                        "Phase",
                         "=",
                         "0"
                       ]
                     },
                     {
                       "type": {
-                        "value": "VarObjetTxt"
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "Phase",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Jump3D::Jump3D::IsJumping"
                       },
                       "parameters": [
                         "Player",
-                        "CardHand[0]",
-                        "!=",
-                        "\"0\""
+                        "Jump3D",
+                        ""
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Player",
-                        "CardAction",
-                        "=",
-                        "Player.CardHand[0]"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"w\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SimulateMoveForwardKey"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            ""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Player",
-                        "CardHand[0]",
-                        "=",
-                        "\"0\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"s\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SimulateMoveBackwardKey"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            ""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "Player",
-                        "DiscardCount",
-                        "+",
-                        "1"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"a\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SimulateMoveLeftKey"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            ""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"ReloadTime\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"d\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Walk3D::Walk3D::SimulateMoveRightKey"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Walk3D",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -3254,68 +3312,31 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "VarObjet"
+                        "value": "VarScene"
                       },
                       "parameters": [
-                        "Player",
-                        "CardSelected",
-                        "=",
+                        "MouseWheelDeltaVar",
+                        ">",
                         "1"
                       ]
                     },
                     {
                       "type": {
-                        "value": "VarObjetTxt"
+                        "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [
-                        "Player",
-                        "CardHand[1]",
-                        "!=",
-                        "\"0\""
-                      ]
+                      "parameters": []
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Player",
-                        "CardAction",
-                        "=",
-                        "Player.CardHand[1]"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Player",
-                        "CardHand[1]",
-                        "=",
-                        "\"0\""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "ModVarObjet"
                       },
                       "parameters": [
                         "Player",
-                        "DiscardCount",
-                        "+",
+                        "CardSelected",
+                        "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"ReloadTime\""
                       ]
                     }
                   ]
@@ -3325,139 +3346,355 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "VarObjet"
+                        "value": "VarScene"
                       },
                       "parameters": [
-                        "Player",
-                        "CardSelected",
-                        "=",
-                        "2"
+                        "MouseWheelDeltaVar",
+                        "<",
+                        "-1"
                       ]
                     },
                     {
                       "type": {
-                        "value": "VarObjetTxt"
+                        "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [
-                        "Player",
-                        "CardHand[2]",
-                        "!=",
-                        "\"0\""
-                      ]
+                      "parameters": []
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Player",
-                        "CardAction",
-                        "=",
-                        "Player.CardHand[2]"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Player",
-                        "CardHand[2]",
-                        "=",
-                        "\"0\""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "ModVarObjet"
                       },
                       "parameters": [
                         "Player",
-                        "DiscardCount",
+                        "CardSelected",
                         "+",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"ReloadTime\""
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "VarObjet"
+                        "inverted": true,
+                        "value": "Jump3D::Jump3D::IsJumping"
                       },
                       "parameters": [
                         "Player",
-                        "CardSelected",
-                        "=",
-                        "3"
+                        "Jump3D",
+                        ""
                       ]
                     },
                     {
                       "type": {
-                        "value": "VarObjetTxt"
+                        "value": "MouseButtonFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
                       },
                       "parameters": [
                         "Player",
-                        "CardHand[3]",
-                        "!=",
-                        "\"0\""
+                        "\"ReloadTime\"",
+                        ">=",
+                        "0.5"
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Player",
-                        "CardAction",
-                        "=",
-                        "Player.CardHand[3]"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardSelected",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "!=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardAction",
+                            "=",
+                            "Player.CardHand[0]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "DiscardCount",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"ReloadTime\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "Player",
-                        "CardHand[3]",
-                        "=",
-                        "\"0\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardSelected",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "!=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardAction",
+                            "=",
+                            "Player.CardHand[1]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "DiscardCount",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"ReloadTime\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "Player",
-                        "DiscardCount",
-                        "+",
-                        "1"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardSelected",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "!=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardAction",
+                            "=",
+                            "Player.CardHand[2]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "DiscardCount",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"ReloadTime\""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Player",
-                        "\"ReloadTime\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardSelected",
+                            "=",
+                            "3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "!=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardAction",
+                            "=",
+                            "Player.CardHand[3]"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Player",
+                            "DiscardCount",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Player",
+                            "\"ReloadTime\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -4030,7 +4267,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "CardStuff",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4246,6 +4482,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -10185,6 +10422,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "Dash",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -10404,6 +10642,62 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Player",
+                            "TakeDoubleDmg",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::EnableEffect"
+                          },
+                          "parameters": [
+                            "PlayerHealthBar",
+                            "Effect",
+                            "\"DoubleDmgEfct\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Player",
+                            "TakeDoubleDmg",
+                            "True"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "EffectCapability::EffectBehavior::EnableEffect"
+                          },
+                          "parameters": [
+                            "PlayerHealthBar",
+                            "Effect",
+                            "\"DoubleDmgEfct\"",
+                            "yes"
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -10413,7 +10707,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "AbHurtBlind",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -10431,6 +10724,12 @@
                             "<",
                             "1"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -10460,6 +10759,12 @@
                             ">=",
                             "1"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -10472,6 +10777,41 @@
                             "Opacity",
                             "=",
                             "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "ScreenFlash",
+                            "Tween",
+                            "\"ScreenFlashOn\"",
+                            "240",
+                            "\"easeOutCubic\"",
+                            "0.5",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                          },
+                          "parameters": [
+                            "ScreenFlash",
+                            "Tween",
+                            "\"ScreenFlashOn\"",
+                            "0",
+                            "\"easeOutCubic\"",
+                            "0.2",
+                            ""
                           ]
                         }
                       ]
@@ -10599,13 +10939,12 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "Distance"
                   },
                   "parameters": [
                     "SniperBullet",
                     "Boss",
                     "108",
-                    "",
                     ""
                   ]
                 }
@@ -10762,8 +11101,88 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullets",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardObject"
+                  },
+                  "parameters": [
+                    "BossAberBulletFirer",
+                    "FireBullet",
+                    "Boss.X()",
+                    "Boss.Y()+80",
+                    "BossAberCardsBullet",
+                    "Player",
+                    "1024",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -10783,13 +11202,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "VarObjet"
+                    "value": "Distance"
                   },
                   "parameters": [
-                    "Boss",
-                    "Phase",
-                    "=",
-                    "1"
+                    "BossAberCardsBullet",
+                    "Player",
+                    "64",
+                    ""
                   ]
                 },
                 {
@@ -10806,9 +11225,193 @@
                   },
                   "parameters": [
                     "Player",
-                    "DeckCount",
-                    "+",
+                    "DeckPile.BasicShot",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.BigShot",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.SniperShot",
+                    "=",
                     "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.Dash",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.Heal",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.AbHeal",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.AbHurtBlind",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckPile.AbParaJump",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DiscardCount",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "DeckCount",
+                    "=",
+                    "21"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "WhichCardNext",
+                    "=",
+                    "RandomInRange(0,7)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardHand[0]",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardHand[1]",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardHand[2]",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Player",
+                    "CardHand[3]",
+                    "=",
+                    "\"0\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "HP",
+                    "=",
+                    "100"
                   ]
                 }
               ]
@@ -10821,7 +11424,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "BossActions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10853,6 +11455,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -10864,6 +11467,700 @@
                     "Phase",
                     "=",
                     "0"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "WhichActionNext",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceVersPos"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "Boss.JumpTargetPostion.X",
+                        "Boss.JumpTargetPostion.Y",
+                        "1000",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "ActionCooldownTime",
+                        "=",
+                        "1.5"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "JumpTargetPostion.X",
+                            "=",
+                            "RandomFloatInRange(0,1900)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "JumpTargetPostion.Y",
+                            "=",
+                            "RandomFloatInRange(0,1900)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"ActionCooldown\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "WhichActionNext",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::FireTowardObject"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "FireBullet",
+                        "Boss.X()",
+                        "Boss.Y()+84",
+                        "BossBasicBullet",
+                        "Player",
+                        "1024",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "ActionCooldownTime",
+                        "=",
+                        "2.5"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"ActionCooldown\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "WhichActionNext",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike",
+                        "RandomFloatInRange(0,1900)",
+                        "RandomFloatInRange(0,1900)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AjoutObjConcern"
+                      },
+                      "parameters": [
+                        "",
+                        "BossGSpike"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::Base3DBehavior::SetZ"
+                      },
+                      "parameters": [
+                        "BossGSpike",
+                        "Object3D",
+                        "-",
+                        "128"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"GSpikeGoUpTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"GSpikeExpTimer\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "WhichActionNext",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::FireTowardObject"
+                      },
+                      "parameters": [
+                        "BossTurret",
+                        "FireBullet",
+                        "BossTurret.X()",
+                        "BossTurret.Y()+20",
+                        "BossTurretBullets",
+                        "Player",
+                        "2304",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "ActionCooldownTime",
+                        "=",
+                        "2.5"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"ActionCooldown\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "BasicShot",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "DirectShot",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "FireBullet",
+                            "=",
+                            "16",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "DirectShot",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "FireBullet",
+                            "=",
+                            "17",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "GSpike",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"GSpikeGoUpTimer\"",
+                            ">=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AjoutObjConcern"
+                          },
+                          "parameters": [
+                            "",
+                            "BossGSpike"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::AddObjectPositionZTween2"
+                          },
+                          "parameters": [
+                            "BossGSpike",
+                            "Tween",
+                            "Object3D",
+                            "\"GSpikeGoUpTw\"",
+                            "0",
+                            "\"easeOutBack\"",
+                            "0.5",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"GSpikeExpTimer\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"GSpikeExpTimer\"",
+                            ">=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "BossGSpike",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"ActionCooldown\""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "folded": true,
+                  "name": "Turret",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "JustCreated",
+                            "True"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Base3DBehavior::SetZ"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "Object3D",
+                            "=",
+                            "300"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "JustCreated",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "JustCreated",
+                            "False"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Base3DBehavior::SetZ"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "Object3D",
+                            "-",
+                            "50"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Base3DBehavior::Z"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "Object3D",
+                            "<=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Base3DBehavior::SetZ"
+                          },
+                          "parameters": [
+                            "BossTurretBullets",
+                            "Object3D",
+                            "=",
+                            "3"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "1"
                   ]
                 }
               ],
@@ -11598,235 +12895,371 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "AttackCollisions",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "BossBasicBullet",
-                "Player",
-                "64",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "BossBasicBullet",
+                    "Player",
+                    "64",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DmgInvincTime\"",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DashInvincTime\"",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::Base3DBehavior::Z"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Object3D",
+                    "<",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "BossBasicBullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "HP",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "PlayerHealthBar",
+                    "Flash",
+                    "0.8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DmgInvincTime\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Player",
+                        "TakeDoubleDmg",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "HP",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DmgInvincTime\"",
-                ">",
-                "1"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "BossTurretBullets",
+                    "Player",
+                    "64",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DmgInvincTime\"",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DashInvincTime\"",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::Base3DBehavior::Z"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Object3D",
+                    "<",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "BossTurretBullets",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "HP",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "PlayerHealthBar",
+                    "Flash",
+                    "0.8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DmgInvincTime\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Player",
+                        "TakeDoubleDmg",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "HP",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DashInvincTime\"",
-                ">",
-                "1"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "BossGSpike",
+                    "Player",
+                    "64",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DmgInvincTime\"",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DashInvincTime\"",
+                    ">",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::Base3DBehavior::Z"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Object3D",
+                    "<",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "HP",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Flash::Flash::Flash"
+                  },
+                  "parameters": [
+                    "PlayerHealthBar",
+                    "Flash",
+                    "0.8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"DmgInvincTime\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Player",
+                        "TakeDoubleDmg",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Player",
+                        "HP",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "BossBasicBullet",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Player",
-                "HP",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Flash::Flash::Flash"
-              },
-              "parameters": [
-                "PlayerHealthBar",
-                "Flash",
-                "0.8",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DmgInvincTime\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "BossTurretBullets",
-                "Player",
-                "64",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DmgInvincTime\"",
-                ">",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DashInvincTime\"",
-                ">",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "BossTurretBullets",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Player",
-                "HP",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Flash::Flash::Flash"
-              },
-              "parameters": [
-                "PlayerHealthBar",
-                "Flash",
-                "0.8",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DmgInvincTime\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "BossGSpike",
-                "Player",
-                "64",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DmgInvincTime\"",
-                ">",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DashInvincTime\"",
-                ">",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Player",
-                "HP",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Flash::Flash::Flash"
-              },
-              "parameters": [
-                "PlayerHealthBar",
-                "Flash",
-                "0.8",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"DmgInvincTime\""
-              ]
-            }
-          ]
+          "parameters": []
         }
       ],
       "parameters": []
