@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.1306316110252848,
+    "zoomFactor": 0.926622364902814,
     "windowMask": false
   },
   "objectsGroups": [
@@ -73,12 +73,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "folded": true,
-      "name": "IsPaused",
-      "type": "boolean",
-      "value": false
     }
   ],
   "instances": [
@@ -551,22 +545,6 @@
       "x": 328,
       "y": -64,
       "zOrder": 29,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 24,
-      "layer": "UI",
-      "name": "PauseText",
-      "persistentUuid": "59daa0db-e526-408e-8963-02983d04e373",
-      "width": 72,
-      "x": 280,
-      "y": 136,
-      "zOrder": 30,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2640,15 +2618,6 @@
         },
         {
           "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "Player",
-            "\"PauseBuffer\""
-          ]
-        },
-        {
-          "type": {
             "value": "Scene3D::Base3DBehavior::SetDepth"
           },
           "parameters": [
@@ -2791,7 +2760,7 @@
             "DebugText",
             "Text",
             "=",
-            "ToString(Player.ObjectTimerElapsedTime(\"DashInvincTime\"))"
+            ""
           ]
         },
         {
@@ -3770,50 +3739,65 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyReleased"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "",
-                    "Escape"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "IsPaused",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                },
-                {
-                  "type": {
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PauseBuffer\"",
-                    ">=",
-                    "0.0000001"
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Back"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Return"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Tab"
+                      ]
+                    }
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "SetSceneVariableAsBoolean"
+                    "value": "PushScene"
                   },
                   "parameters": [
-                    "IsPaused",
-                    "True"
+                    "",
+                    "\"Pause scene\""
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneJustResumed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "MousePointerLock::RequestPointerLock"
@@ -3821,151 +3805,6 @@
                   "parameters": [
                     "",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "Player",
-                    "\"PauseBuffer\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Escape"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "IsPaused",
-                    "True"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                },
-                {
-                  "type": {
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PauseBuffer\"",
-                    ">=",
-                    "0.0000001"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "IsPaused",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MousePointerLock::ExitPointerLock"
-                  },
-                  "parameters": [
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "Player",
-                    "\"PauseBuffer\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "IsPaused",
-                    "="
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "PauseText"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeTimeScale"
-                  },
-                  "parameters": [
-                    "",
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "IsPaused",
-                    "True"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "PauseText",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeTimeScale"
-                  },
-                  "parameters": [
-                    "",
-                    "0.00001"
                   ]
                 }
               ]
