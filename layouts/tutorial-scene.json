@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "BossRoom_32scene",
-  "name": "BossRoom scene",
+  "mangledName": "Tutorial_32scene",
+  "name": "Tutorial scene",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0235568070420558,
+    "zoomFactor": 0.2459124262157138,
     "windowMask": false
   },
   "objectsGroups": [
@@ -392,22 +392,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 10,
-      "height": 200,
-      "layer": "",
-      "name": "Boss",
-      "persistentUuid": "17196d45-fb42-46b2-962a-0270e3aeb06b",
-      "width": 100,
-      "x": 1696,
-      "y": 760,
-      "zOrder": 20,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 96,
       "layer": "",
@@ -504,22 +488,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 10,
-      "height": 64,
-      "layer": "",
-      "name": "BossTurret",
-      "persistentUuid": "7e147c99-0f73-496b-8751-21d5d426f187",
-      "width": 64,
-      "x": 1952,
-      "y": 880,
-      "zOrder": 27,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 32,
       "height": 24,
       "layer": "UI",
@@ -529,22 +497,6 @@
       "x": 48,
       "y": 8,
       "zOrder": 28,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 2,
-      "height": 64,
-      "layer": "",
-      "name": "BossAberBulletFirer",
-      "persistentUuid": "4832cba8-7825-4bd2-9ec0-8afcb8c6b73b",
-      "width": 64,
-      "x": 328,
-      "y": -64,
-      "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3182,38 +3134,7 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "Phase",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "Phase",
-                        "=",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [],
               "events": [
                 {
@@ -3817,7 +3738,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "ReloadAndReshuffle",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3878,7 +3798,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3941,19 +3860,7 @@
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "Phase",
-                        "=",
-                        "0"
-                      ]
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [],
                   "events": [
                     {
@@ -4009,6 +3916,7 @@
                   ]
                 },
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4104,19 +4012,7 @@
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "Phase",
-                        "=",
-                        "0"
-                      ]
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
@@ -4218,6 +4114,7 @@
                   ]
                 },
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4590,7 +4487,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4610,19 +4506,7 @@
                     {
                       "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "Boss",
-                            "Phase",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ],
+                      "conditions": [],
                       "actions": [
                         {
                           "type": {
@@ -5140,6 +5024,8 @@
                       ]
                     },
                     {
+                      "disabled": true,
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -5989,19 +5875,7 @@
                     {
                       "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "Boss",
-                            "Phase",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ],
+                      "conditions": [],
                       "actions": [
                         {
                           "type": {
@@ -6519,6 +6393,7 @@
                       ]
                     },
                     {
+                      "disabled": true,
                       "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
@@ -7369,19 +7244,7 @@
                     {
                       "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "Boss",
-                            "Phase",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ],
+                      "conditions": [],
                       "actions": [
                         {
                           "type": {
@@ -7899,6 +7762,7 @@
                       ]
                     },
                     {
+                      "disabled": true,
                       "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
@@ -8749,19 +8613,7 @@
                     {
                       "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "Boss",
-                            "Phase",
-                            "=",
-                            "0"
-                          ]
-                        }
-                      ],
+                      "conditions": [],
                       "actions": [
                         {
                           "type": {
@@ -9279,6 +9131,7 @@
                       ]
                     },
                     {
+                      "disabled": true,
                       "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
@@ -11139,6 +10992,8 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "disabled": true,
+      "folded": true,
       "name": "Boss",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

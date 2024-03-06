@@ -321,6 +321,20 @@
           "width": 192
         }
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewVideo",
+      "type": "Video::VideoObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "opacity": 255,
+        "loop": false,
+        "volume": 100,
+        "videoResource": ""
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -334,6 +348,9 @@
       },
       {
         "objectName": "QuitButton"
+      },
+      {
+        "objectName": "NewVideo"
       }
     ]
   },
@@ -421,6 +438,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -461,6 +483,10 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
     },
     {
       "name": "Resizable",
