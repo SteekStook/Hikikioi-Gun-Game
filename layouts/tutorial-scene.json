@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 68,
   "disableInputWhenNotFocused": true,
   "mangledName": "Tutorial_32scene",
   "name": "Tutorial scene",
-  "r": 209,
+  "r": 68,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 209,
+  "v": 68,
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2459124262157138,
+    "zoomFactor": 0.4773551654051678,
     "windowMask": false
   },
   "objectsGroups": [
@@ -80,11 +80,11 @@
       "angle": 0,
       "customSize": true,
       "depth": 2,
-      "height": 1920,
+      "height": 360,
       "layer": "",
       "name": "Floor",
       "persistentUuid": "e73c288d-5e8c-46ce-9b0e-b3cf0a14b907",
-      "width": 1920,
+      "width": 640,
       "x": 0,
       "y": 0,
       "zOrder": 1,
@@ -101,8 +101,8 @@
       "name": "Player",
       "persistentUuid": "4b465bd1-f9c6-48d5-991a-ee908534d50a",
       "width": 32,
-      "x": 128,
-      "y": 944,
+      "x": 64,
+      "y": 160,
       "z": 2,
       "zOrder": 2,
       "numberProperties": [],
@@ -163,8 +163,8 @@
       "name": "Crosshair",
       "persistentUuid": "d6794e06-385c-401e-a95a-21eabbf379ad",
       "width": 304,
-      "x": 640,
-      "y": -8,
+      "x": -304,
+      "y": -164,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -376,21 +376,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 360,
-      "layer": "UI",
-      "name": "ScreenFlash",
-      "persistentUuid": "d667c3a2-df86-475a-943c-72bb14943521",
-      "width": 640,
-      "x": 0,
-      "y": 0,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 96,
@@ -402,70 +387,6 @@
       "y": 0,
       "z": 2,
       "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1952,
-      "layer": "",
-      "name": "BoundaryBox",
-      "persistentUuid": "f42e4f39-2575-46f8-bb73-3fda076ce0d0",
-      "width": 16,
-      "x": 1920,
-      "y": -16,
-      "zOrder": 22,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1952,
-      "layer": "",
-      "name": "BoundaryBox",
-      "persistentUuid": "fb32ee8a-a05e-415a-8c10-dbbe03896601",
-      "width": 16,
-      "x": -16,
-      "y": -16,
-      "zOrder": 22,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 16,
-      "layer": "",
-      "name": "BoundaryBox",
-      "persistentUuid": "deb7429a-a091-4ede-8b3e-cc2596dd6666",
-      "width": 1920,
-      "x": 0,
-      "y": 1920,
-      "zOrder": 22,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 16,
-      "layer": "",
-      "name": "BoundaryBox",
-      "persistentUuid": "4ac82552-f745-4a1a-80d7-ec01059659fc",
-      "width": 1920,
-      "x": 0,
-      "y": -16,
-      "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -487,19 +408,284 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 32,
-      "height": 24,
-      "layer": "UI",
-      "name": "BossHealthBar",
-      "persistentUuid": "d14bec09-e5ab-465c-a31c-3044c3e6e2fd",
-      "width": 544,
-      "x": 48,
-      "y": 8,
-      "zOrder": 28,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "MoveIntroText",
+      "persistentUuid": "e07d5800-e331-475a-81b6-9531a6d51d3e",
+      "width": 0,
+      "x": 440,
+      "y": -288,
+      "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "TurnIntroText",
+      "persistentUuid": "66017943-4793-4eee-aee2-e5b8f8f1c1ab",
+      "width": 0,
+      "x": 440,
+      "y": 448,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 424,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "0c78324b-d8db-4d55-a0e9-49ddc8f73e0f",
+      "width": 640,
+      "x": 640,
+      "y": -64,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 200,
+      "layer": "",
+      "name": "CardSelectIntroText",
+      "persistentUuid": "ad01631c-16b8-4e62-947d-65174568f232",
+      "width": 200,
+      "x": 1592,
+      "y": -288,
+      "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 200,
+      "height": 296,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "9fb4625b-2b7e-45b5-aaaf-b08a682a72b5",
+      "width": 384,
+      "x": 768,
+      "y": 64,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "IsWall",
+          "persistentUuid": "17bfba47-f306-4e5c-b53c-714c298795c6",
+          "type": "boolean",
+          "value": true
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 360,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "5c8e79ae-5a80-4e93-af20-aa64c73f7dbb",
+      "width": 640,
+      "x": 1280,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 360,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "6527783c-14a0-4166-a31e-068631c1e453",
+      "width": 640,
+      "x": 1920,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "ShootIntroText",
+      "persistentUuid": "44257313-d6e5-490d-b241-8294c6c2e015",
+      "width": 0,
+      "x": 2232,
+      "y": 448,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 360,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "5b062f20-be80-4a4c-b255-cbee15b592cd",
+      "width": 640,
+      "x": 3200,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "ShuffleCardIntroText",
+      "persistentUuid": "e7b22eb4-439f-4f39-9839-557e555dd040",
+      "width": 0,
+      "x": 3424,
+      "y": 80,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 360,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "c26c2eed-219e-4250-8811-c4df0fc89805",
+      "width": 640,
+      "x": 3840,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "door",
+      "persistentUuid": "62b648a7-078d-4fc9-a474-d458dac7191f",
+      "rotationX": -90,
+      "width": 0,
+      "x": 4482,
+      "y": 82,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 200,
+      "height": 360,
+      "layer": "",
+      "name": "DestructableWall",
+      "persistentUuid": "297268a6-e046-46f0-a140-8a2830eb9420",
+      "width": 100,
+      "x": 3840,
+      "y": 0,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "HealthBarIntroText",
+      "persistentUuid": "ca958845-1877-4532-985c-66bd7fcd28ee",
+      "width": 0,
+      "x": 4088,
+      "y": 80,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "ScreenFade",
+      "persistentUuid": "388ddc90-e731-4985-ac3c-7d32d2688d21",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 36,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 424,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "0e1bc3b9-bafe-447a-8c61-6e9cb0bfa005",
+      "width": 640,
+      "x": 2560,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 200,
+      "height": 296,
+      "layer": "",
+      "name": "Floor",
+      "persistentUuid": "8c641838-e431-432c-b196-3b780fdbf617",
+      "width": 384,
+      "x": 2688,
+      "y": 0,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "IsWall",
+          "type": "boolean",
+          "value": true
+        }
+      ]
     }
   ],
   "objects": [
@@ -533,7 +719,7 @@
         "backFaceResourceRepeat": false,
         "leftFaceResourceRepeat": false,
         "rightFaceResourceRepeat": false,
-        "topFaceResourceRepeat": true,
+        "topFaceResourceRepeat": false,
         "bottomFaceResourceRepeat": false,
         "materialType": "Basic"
       }
@@ -2380,6 +2566,400 @@
         "characterSize": 16,
         "color": "42;0;66"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "MoveIntroText",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
+      "content": {
+        "width": 200,
+        "height": 200,
+        "depth": 2,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "MoveIntroText2_Front2",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TurnIntroText",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
+      "content": {
+        "width": 200,
+        "height": 200,
+        "depth": 2,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "MoveIntroText2_Front3",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "CardSelectIntroText",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
+      "content": {
+        "width": 200,
+        "height": 200,
+        "depth": 2,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "TurnIntroText2_Front",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "ShootIntroText",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
+      "content": {
+        "width": 200,
+        "height": 200,
+        "depth": 2,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "CardSelectIntroText2_Front3",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "ShuffleCardIntroText",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
+      "content": {
+        "width": 200,
+        "height": 200,
+        "depth": 2,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\ShuffleCardIntroText1.png",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "door",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 100,
+        "height": 200,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "New3DBox_Front5",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "New3DBox_Front5",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "DestructableWall",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 100,
+        "height": 200,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "New3DBox_Front6",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": false,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "HealthBarIntroText",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Billboard",
+          "type": "Billboard::Billboard",
+          "ShouldRotateX": true,
+          "ShouldRotateY": true,
+          "ShouldRotateZ": true,
+          "OffsetPositionMode": "No change"
+        }
+      ],
+      "content": {
+        "width": 200,
+        "height": 200,
+        "depth": 2,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\HealthBarIntroText.png",
+        "backFaceResourceName": "",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "",
+        "rightFaceResourceName": "",
+        "topFaceResourceName": "",
+        "bottomFaceResourceName": "",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": false,
+        "rightFaceVisible": false,
+        "topFaceVisible": false,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "Basic"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ScreenFade",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "ScreenFade",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\ScreenFlash.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2482,10 +3062,42 @@
         ]
       },
       {
+        "folderName": "TutText",
+        "children": [
+          {
+            "objectName": "MoveIntroText"
+          },
+          {
+            "objectName": "TurnIntroText"
+          },
+          {
+            "objectName": "CardSelectIntroText"
+          },
+          {
+            "objectName": "ShootIntroText"
+          },
+          {
+            "objectName": "ShuffleCardIntroText"
+          },
+          {
+            "objectName": "HealthBarIntroText"
+          }
+        ]
+      },
+      {
         "objectName": "Floor"
       },
       {
+        "objectName": "door"
+      },
+      {
+        "objectName": "DestructableWall"
+      },
+      {
         "objectName": "BoundaryBox"
+      },
+      {
+        "objectName": "ScreenFade"
       }
     ]
   },
@@ -2535,10 +3147,19 @@
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
-            "ScreenFlash",
+            "ScreenFade",
             "Opacity",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "MousePointerLock::RequestPointerLock"
+          },
+          "parameters": [
+            "",
+            ""
           ]
         },
         {
@@ -2584,7 +3205,7 @@
             "value": "ScalableCapability::ScalableBehavior::SetValue"
           },
           "parameters": [
-            "ScreenFlash",
+            "ScreenFade",
             "Scale",
             "=",
             "10"
@@ -2592,11 +3213,68 @@
         },
         {
           "type": {
-            "value": "MousePointerLock::RequestPointerLock"
+            "value": "Scene3D::Base3DBehavior::SetZ"
           },
           "parameters": [
-            "",
-            ""
+            "MoveIntroText",
+            "Object3D",
+            "=",
+            "120"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "TurnIntroText",
+            "Object3D",
+            "=",
+            "120"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "CardSelectIntroText",
+            "Object3D",
+            "=",
+            "160"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "ShootIntroText",
+            "Object3D",
+            "=",
+            "160"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "ShuffleCardIntroText",
+            "Object3D",
+            "=",
+            "120"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "HealthBarIntroText",
+            "Object3D",
+            "=",
+            "120"
           ]
         }
       ]
@@ -2712,7 +3390,7 @@
             "DebugText",
             "Text",
             "=",
-            ""
+            "ToString(BasicBullet.Object3D::Z())"
           ]
         },
         {
@@ -2906,6 +3584,16 @@
         },
         {
           "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "DestructableWall",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "ModVarObjet"
           },
           "parameters": [
@@ -2950,6 +3638,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2983,7 +3672,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"BossRoom scene\"",
+                    "\"Tutorial scene\"",
                     ""
                   ]
                 }
@@ -3133,6 +3822,7 @@
               "comment": "Delete/Deactivate controls above this"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [],
@@ -3738,6 +4428,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "ReloadAndReshuffle",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4410,7 +5101,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "CardHand",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9970,6 +10660,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardActions",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -13431,8 +14122,159 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Bullets",
+            "DestructableWall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "DestructableWall",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Bullets",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ObjectVariableAsBoolean"
+          },
+          "parameters": [
+            "Floor",
+            "IsWall",
+            "True"
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Bullets",
+            "Floor",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Bullets",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Distance"
+          },
+          "parameters": [
+            "Player",
+            "door",
+            "96",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Player",
+            "Walk3D",
+            "="
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "ScreenFade",
+            "Opacity",
+            "+",
+            "5"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::Value"
+          },
+          "parameters": [
+            "ScreenFade",
+            "Opacity",
+            "=",
+            "255"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.6"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"BossRoom scene\"",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
