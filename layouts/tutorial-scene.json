@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.523872535439557,
+    "zoomFactor": 1.2489075653200288,
     "windowMask": false
   },
   "objectsGroups": [
@@ -5317,6 +5317,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardHand",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
