@@ -556,6 +556,51 @@
         "name": "assets\\Visuals\\HealthBarIntroText.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCrosshair.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCrosshair.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiHealthBarBorderPlayer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiHealthBarBorderPlayer.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiHealthBarFillPlayer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiHealthBarFillPlayer.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiHealthBarBorderAberBoss.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiHealthBarBorderAberBoss.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiHealthBarFillAberBoss.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiHealthBarFillAberBoss.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

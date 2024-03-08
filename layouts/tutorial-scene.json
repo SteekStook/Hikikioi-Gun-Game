@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6650774182501707,
+    "zoomFactor": 1.523872535439557,
     "windowMask": false
   },
   "objectsGroups": [
@@ -354,22 +354,6 @@
       "x": 592,
       "y": 328,
       "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 32,
-      "height": 16,
-      "layer": "UI",
-      "name": "PlayerHealthBar",
-      "persistentUuid": "30c10095-8c6a-4976-81ae-9c83a09e2538",
-      "width": 118,
-      "x": 261,
-      "y": 252,
-      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -875,6 +859,21 @@
       "x": 1296,
       "y": -16,
       "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 32,
+      "layer": "UI",
+      "name": "PlayerHealthBar",
+      "persistentUuid": "ab2d76ae-0667-4071-b9a8-171da281a569",
+      "width": 128,
+      "x": 256,
+      "y": 248,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1669,34 +1668,34 @@
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 4,
-          "height": 26,
-          "leftMargin": 2,
-          "rightMargin": 2,
-          "texture": "assets\\Visuals\\Dot Bar Green Border.png",
+          "bottomMargin": 0,
+          "height": 24,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarBorderPlayer.png",
           "tiled": false,
-          "topMargin": 3,
-          "width": 118
+          "topMargin": 0,
+          "width": 128
         },
         "Buffer": {
           "bottomMargin": 0,
-          "height": 19,
+          "height": 28,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
+          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarFillPlayer.png",
           "tiled": true,
           "topMargin": 0,
-          "width": 21
+          "width": 128
         },
         "FillBar": {
-          "bottomMargin": 0,
-          "height": 19,
-          "leftMargin": 0,
+          "bottomMargin": -2,
+          "height": 24,
+          "leftMargin": -2,
           "rightMargin": 0,
-          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
+          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarFillPlayer.png",
           "tiled": true,
-          "topMargin": 0,
-          "width": 21
+          "topMargin": -3,
+          "width": 128
         },
         "Label": {
           "bold": false,
@@ -3856,7 +3855,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
