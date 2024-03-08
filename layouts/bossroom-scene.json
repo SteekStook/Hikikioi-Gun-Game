@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 2.590583310247237,
+    "zoomFactor": 2.7682396092614274,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1232,7 +1232,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
+      "string": "10",
       "font": "mononoki-Regular.ttf",
       "textAlignment": "left",
       "characterSize": 20,
@@ -1255,7 +1255,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Text",
+        "text": "10",
         "font": "mononoki-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 20,
@@ -3004,6 +3004,32 @@
           },
           "parameters": [
             "Bullets",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "MousePointerLock::isPointerLocked"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MousePointerLock::RequestPointerLock"
+          },
+          "parameters": [
+            "",
             ""
           ]
         }
@@ -13610,7 +13636,7 @@
       "isLocked": false,
       "name": "",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [
         {
           "defaultSize": true,
