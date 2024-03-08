@@ -556,6 +556,7 @@
         "name": "assets\\Visuals\\HealthBarIntroText.png",
         "smoothed": false,
         "userAdded": true
+<<<<<<< HEAD
       },
       {
         "alwaysLoaded": false,
@@ -736,6 +737,8 @@
         "name": "assets\\Visuals\\UI\\HikikioiCardHealB.png",
         "smoothed": false,
         "userAdded": true
+=======
+>>>>>>> parent of 27f539a (Implemented new health bar sprites)
       }
     ],
     "resourceFolders": []

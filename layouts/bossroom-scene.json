@@ -18,7 +18,11 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
+<<<<<<< HEAD
     "zoomFactor": 1.9868866996519683,
+=======
+    "zoomFactor": 2.7682396092614274,
+>>>>>>> parent of 27f539a (Implemented new health bar sprites)
     "windowMask": false
   },
   "objectsGroups": [
@@ -112,13 +116,13 @@
     {
       "angle": 0,
       "customSize": false,
-      "height": 33,
+      "height": 0,
       "layer": "UI",
       "name": "Crosshair",
       "persistentUuid": "0fbe62c4-75ff-49d3-be38-22c2206c7c35",
-      "width": 33,
+      "width": 0,
       "x": 304,
-      "y": 163,
+      "y": 164,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -549,6 +553,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
+<<<<<<< HEAD
       "height": 2,
       "layer": "UI",
       "name": "CardSlots",
@@ -557,6 +562,16 @@
       "x": 270,
       "y": 232,
       "zOrder": 31,
+=======
+      "height": 64,
+      "layer": "UI",
+      "name": "ScreenFlash",
+      "persistentUuid": "c6b64380-cfd3-48ed-b86a-aa0ecf0aa3cd",
+      "width": 8,
+      "x": 160,
+      "y": 296,
+      "zOrder": 30,
+>>>>>>> parent of 27f539a (Implemented new health bar sprites)
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -862,7 +877,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Visuals\\UI\\HikikioiCrosshair.png",
+                  "image": "assets\\Visuals\\Crosshair2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1833,34 +1848,34 @@
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 0,
-          "height": 24,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarBorderPlayer.png",
-          "tiled": true,
-          "topMargin": 0,
-          "width": 128
+          "bottomMargin": 4,
+          "height": 26,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "assets\\Visuals\\Dot Bar Green Border.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 118
         },
         "Buffer": {
           "bottomMargin": 0,
           "height": 19,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarFillPlayer.png",
+          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
           "tiled": true,
           "topMargin": 0,
           "width": 21
         },
         "FillBar": {
-          "bottomMargin": -2,
-          "height": 24,
-          "leftMargin": -2,
+          "bottomMargin": 0,
+          "height": 19,
+          "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarFillPlayer.png",
+          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
           "tiled": true,
-          "topMargin": -3,
-          "width": 128
+          "topMargin": 0,
+          "width": 21
         },
         "Label": {
           "bold": false,
@@ -2698,34 +2713,34 @@
       },
       "childrenContent": {
         "Background": {
-          "bottomMargin": 0,
-          "height": 24,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarBorderAberBoss.png",
-          "tiled": true,
-          "topMargin": 0,
-          "width": 544
+          "bottomMargin": 4,
+          "height": 26,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "assets\\Visuals\\Dot Bar Green Border.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 118
         },
         "Buffer": {
           "bottomMargin": 0,
           "height": 19,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarFillAberBoss.png",
+          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
           "tiled": true,
           "topMargin": 0,
           "width": 21
         },
         "FillBar": {
-          "bottomMargin": -2,
-          "height": 24,
-          "leftMargin": -2,
+          "bottomMargin": 0,
+          "height": 19,
+          "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "assets\\Visuals\\UI\\HikikioiHealthBarFillAberBoss.png",
+          "texture": "assets\\Visuals\\Dot Bar Green Fill Bar.png",
           "tiled": true,
-          "topMargin": -3,
-          "width": 544
+          "topMargin": 0,
+          "width": 21
         },
         "Label": {
           "bold": false,
