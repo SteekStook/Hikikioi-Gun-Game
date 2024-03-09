@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.2489075653200328,
+    "zoomFactor": 0.9266223649028213,
     "windowMask": false
   },
   "objectsGroups": [
@@ -39,6 +39,62 @@
         },
         {
           "name": "BossTurretBullets"
+        }
+      ]
+    },
+    {
+      "name": "UI",
+      "objects": [
+        {
+          "name": "Crosshair"
+        },
+        {
+          "name": "DebugText"
+        },
+        {
+          "name": "Card0"
+        },
+        {
+          "name": "Card1"
+        },
+        {
+          "name": "Card3"
+        },
+        {
+          "name": "Card2"
+        },
+        {
+          "name": "DeckCount"
+        },
+        {
+          "name": "DiscardCount"
+        },
+        {
+          "name": "PlayerHealthBar"
+        },
+        {
+          "name": "DebugText2"
+        },
+        {
+          "name": "AddCardsToDeckText"
+        },
+        {
+          "name": "CardHandSprites0"
+        },
+        {
+          "name": "CardHandSprites1"
+        },
+        {
+          "name": "CardHandSprites2"
+        },
+        {
+          "name": "CardHandSprites3"
+        },
+        {
+          "name": "CardExplanationText"
+        },
+        {
+          "name": "BossHealthBar"
         }
       ]
     }
@@ -605,6 +661,22 @@
       "x": 392,
       "y": 264,
       "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "layer": "UI",
+      "name": "CardExplanationText",
+      "persistentUuid": "297ae7ad-ab31-4e22-8771-e8d249fb9c92",
+      "width": 528,
+      "x": 56,
+      "y": 224,
+      "zOrder": 36,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -5561,6 +5633,47 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CardExplanationText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Fires one bullet that deals 2 DMG",
+      "font": "mononoki-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 66,
+        "g": 0,
+        "r": 42
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Fires one bullet that deals 2 DMG",
+        "font": "mononoki-Regular.ttf",
+        "textAlignment": "center",
+        "characterSize": 10,
+        "color": "42;0;66"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -5671,6 +5784,9 @@
           },
           {
             "objectName": "AddCardsToDeckText"
+          },
+          {
+            "objectName": "CardExplanationText"
           }
         ]
       },
@@ -5720,7 +5836,7 @@
             "Crosshair",
             "Opacity",
             "=",
-            "200"
+            "204"
           ]
         },
         {
@@ -5732,6 +5848,17 @@
             "Opacity",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "UI",
+            "Opacity",
+            "=",
+            "224"
           ]
         },
         {
@@ -5790,6 +5917,46 @@
           "parameters": [
             "",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Card0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Card1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Card2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Card3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "CardSlots"
           ]
         }
       ]
