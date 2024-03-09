@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 5.935728155739231,
+    "zoomFactor": 0.3912220107354005,
     "windowMask": false
   },
   "objectsGroups": [
@@ -742,6 +742,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2176,
+      "height": 2176,
+      "layer": "",
+      "name": "AberSkyBox",
+      "persistentUuid": "5fae60d3-09c3-4b9d-b942-3b0cc4283e72",
+      "width": 2176,
+      "x": -128,
+      "y": -128,
+      "z": -1088,
+      "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -758,13 +775,13 @@
         "depth": 100,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
-        "backFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
+        "frontFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
+        "backFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
         "backFaceUpThroughWhichAxisRotation": "X",
-        "leftFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
-        "rightFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
-        "topFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
-        "bottomFaceResourceName": "assets\\Visuals\\New3DBox_Front.png",
+        "leftFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
+        "rightFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
+        "topFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
+        "bottomFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
         "frontFaceVisible": true,
         "backFaceVisible": false,
         "leftFaceVisible": true,
@@ -5938,6 +5955,41 @@
         "characterSize": 12,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "AberSkyBox",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 64,
+        "height": 64,
+        "depth": 64,
+        "enableTextureTransparency": true,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png5",
+        "backFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png5",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png6",
+        "rightFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png6",
+        "topFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png8",
+        "bottomFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png8",
+        "frontFaceVisible": true,
+        "backFaceVisible": true,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": true,
+        "frontFaceResourceRepeat": true,
+        "backFaceResourceRepeat": true,
+        "leftFaceResourceRepeat": true,
+        "rightFaceResourceRepeat": true,
+        "topFaceResourceRepeat": true,
+        "bottomFaceResourceRepeat": true,
+        "materialType": "Basic"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -6068,6 +6120,9 @@
       },
       {
         "objectName": "Floor"
+      },
+      {
+        "objectName": "AberSkyBox"
       },
       {
         "objectName": "BoundaryBox"
@@ -8009,6 +8064,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardSelect",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -15841,6 +15897,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardHandSprites",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -17661,7 +17718,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "BossActions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18897,7 +18953,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "BasicShot",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -19639,7 +19694,7 @@
       "isLocked": false,
       "name": "",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [
         {
           "defaultSize": true,
