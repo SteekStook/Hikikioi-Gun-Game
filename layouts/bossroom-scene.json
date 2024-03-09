@@ -775,13 +775,13 @@
         "depth": 100,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
-        "backFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
+        "frontFaceResourceName": "assets\\Visuals\\assets_Visuals_Floor_Front.png4.png",
+        "backFaceResourceName": "assets\\Visuals\\assets_Visuals_Floor_Front.png4.png",
         "backFaceUpThroughWhichAxisRotation": "X",
-        "leftFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
-        "rightFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
-        "topFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
-        "bottomFaceResourceName": "assets\\Visuals\\Floor_Front.png4",
+        "leftFaceResourceName": "assets\\Visuals\\assets_Visuals_Floor_Front.png4.png",
+        "rightFaceResourceName": "assets\\Visuals\\assets_Visuals_Floor_Front.png4.png",
+        "topFaceResourceName": "assets\\Visuals\\assets_Visuals_Floor_Front.png4.png",
+        "bottomFaceResourceName": "assets\\Visuals\\assets_Visuals_Floor_Front.png4.png",
         "frontFaceVisible": true,
         "backFaceVisible": false,
         "leftFaceVisible": true,
@@ -5969,13 +5969,13 @@
         "depth": 64,
         "enableTextureTransparency": true,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png5",
-        "backFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png5",
+        "frontFaceResourceName": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png5.png",
+        "backFaceResourceName": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png5.png",
         "backFaceUpThroughWhichAxisRotation": "X",
-        "leftFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png6",
-        "rightFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png6",
-        "topFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png8",
-        "bottomFaceResourceName": "assets\\Visuals\\HikikioiSkybox.png8",
+        "leftFaceResourceName": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png6.png",
+        "rightFaceResourceName": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png6.png",
+        "topFaceResourceName": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png8.png",
+        "bottomFaceResourceName": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png8.png",
         "frontFaceVisible": true,
         "backFaceVisible": true,
         "leftFaceVisible": true,
@@ -8493,11 +8493,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": []
                     }
                   ]
                 },
@@ -8817,11 +8812,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": []
                     }
                   ]
                 },
@@ -9141,11 +9131,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": []
                     }
                   ]
                 },
@@ -9465,11 +9450,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": []
                     }
                   ]
                 },
@@ -9586,6 +9566,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -10135,7 +10116,6 @@
                       ]
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
