@@ -790,6 +790,15 @@
         "name": "assets\\Visuals\\UI\\02.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiDrawDiscardPileIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiDrawDiscardPileIcon.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
