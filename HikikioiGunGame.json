@@ -745,6 +745,51 @@
         "name": "assets\\Visuals\\UI\\HikikioiCardAberJumpB.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCard0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCard0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/0.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "0",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/02.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "02",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\02.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.2081677499978072,
+    "zoomFactor": 1.2489075653200328,
     "windowMask": false
   },
   "objectsGroups": [
@@ -545,22 +545,6 @@
       "x": 328,
       "y": -64,
       "zOrder": 29,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 2,
-      "layer": "UI",
-      "name": "CardSlots",
-      "persistentUuid": "49159dd3-5636-45ea-8214-e1595b330435",
-      "width": 2,
-      "x": 270,
-      "y": 232,
-      "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3186,6 +3170,91 @@
               ]
             }
           ]
+        },
+        {
+          "name": "0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\UI\\0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 96
+                      },
+                      {
+                        "x": 16,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\UI\\02.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 96
+                      },
+                      {
+                        "x": 16,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3834,6 +3903,90 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Visuals\\UI\\HikikioiCardAberJumpB.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 96
+                      },
+                      {
+                        "x": 16,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\UI\\0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 96
+                      },
+                      {
+                        "x": 16,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\UI\\02.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4554,6 +4707,90 @@
               ]
             }
           ]
+        },
+        {
+          "name": "0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\UI\\0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 96
+                      },
+                      {
+                        "x": 16,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\UI\\02.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 96
+                      },
+                      {
+                        "x": 16,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5202,6 +5439,90 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets\\Visuals\\UI\\HikikioiCardAberJumpB.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 96
+                      },
+                      {
+                        "x": 16,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\UI\\0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 32
+                      },
+                      {
+                        "x": 80,
+                        "y": 96
+                      },
+                      {
+                        "x": 16,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\UI\\02.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -8232,6 +8553,7 @@
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -14002,7 +14324,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "CardHand0",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -14018,6 +14339,35 @@
                             "Player",
                             "CardHand[0]",
                             "=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites0",
+                            "Animation",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
                             "\"BasicShot\""
                           ]
                         }
@@ -14151,6 +14501,93 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites0",
+                            "Animation",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites0",
+                            "Animation",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"AbParaJump\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites0",
+                            "Animation",
+                            "=",
+                            "\"AbJump\""
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -14160,7 +14597,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "CardHand1",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -14176,6 +14612,35 @@
                             "Player",
                             "CardHand[1]",
                             "=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites1",
+                            "Animation",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
                             "\"BasicShot\""
                           ]
                         }
@@ -14309,6 +14774,93 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites1",
+                            "Animation",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites1",
+                            "Animation",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"AbParaJump\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites1",
+                            "Animation",
+                            "=",
+                            "\"AbJump\""
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -14318,7 +14870,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "CardHand2",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -14334,6 +14885,35 @@
                             "Player",
                             "CardHand[2]",
                             "=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites2",
+                            "Animation",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
                             "\"BasicShot\""
                           ]
                         }
@@ -14467,6 +15047,93 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites2",
+                            "Animation",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites2",
+                            "Animation",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"AbParaJump\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites2",
+                            "Animation",
+                            "=",
+                            "\"AbJump\""
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -14476,7 +15143,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "CardHand3",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -14492,6 +15158,35 @@
                             "Player",
                             "CardHand[3]",
                             "=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites3",
+                            "Animation",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
                             "\"BasicShot\""
                           ]
                         }
@@ -14622,6 +15317,93 @@
                             "Animation",
                             "=",
                             "\"Heal\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites3",
+                            "Animation",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites3",
+                            "Animation",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"AbParaJump\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "CardHandSprites3",
+                            "Animation",
+                            "=",
+                            "\"AbJump\""
                           ]
                         }
                       ]
@@ -17331,7 +18113,7 @@
       "isLocked": false,
       "name": "",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [
         {
           "defaultSize": true,
