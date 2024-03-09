@@ -601,6 +601,150 @@
         "name": "assets\\Visuals\\UI\\HikikioiHealthBarFillAberBoss.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardBasicShotB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardBasicShotB.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardBasicShotS.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardBasicShotS.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardBigShotB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardBigShotB.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardBigShotS.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardBigShotS.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardFastShotB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardFastShotB.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardFastShotS.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardFastShotS.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardDashB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardDashB.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardDashS.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardDashS.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardHealS.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardHealS.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardHealB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardHealB.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardAberHealS.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardAberHealS.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardAberHealB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardAberHealB.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardAberHurtBlindS.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardAberHurtBlindS.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardAberHurtBlindB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardAberHurtBlindB.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardAberJumpS.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardAberJumpS.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/UI/HikikioiCardAberJumpB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\UI\\HikikioiCardAberJumpB.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
