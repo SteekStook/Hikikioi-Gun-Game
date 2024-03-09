@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.9266223649028213,
+    "zoomFactor": 1.0580714804313973,
     "windowMask": false
   },
   "objectsGroups": [
@@ -615,7 +615,7 @@
       "width": 0,
       "x": 152,
       "y": 264,
-      "zOrder": 32,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -630,7 +630,7 @@
       "width": 0,
       "x": 232,
       "y": 264,
-      "zOrder": 33,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -645,7 +645,7 @@
       "width": 0,
       "x": 312,
       "y": 264,
-      "zOrder": 34,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -660,7 +660,7 @@
       "width": 0,
       "x": 392,
       "y": 264,
-      "zOrder": 35,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -669,7 +669,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 16,
+      "height": 24,
       "layer": "UI",
       "name": "CardExplanationText",
       "persistentUuid": "297ae7ad-ab31-4e22-8771-e8d249fb9c92",
@@ -5648,7 +5648,7 @@
       "string": "Fires one bullet that deals 2 DMG",
       "font": "mononoki-Regular.ttf",
       "textAlignment": "center",
-      "characterSize": 10,
+      "characterSize": 16,
       "color": {
         "b": 66,
         "g": 0,
@@ -5671,7 +5671,7 @@
         "text": "Fires one bullet that deals 2 DMG",
         "font": "mononoki-Regular.ttf",
         "textAlignment": "center",
-        "characterSize": 10,
+        "characterSize": 16,
         "color": "42;0;66"
       }
     }
@@ -5848,17 +5848,6 @@
             "Opacity",
             "=",
             "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "OpacityCapability::OpacityBehavior::SetValue"
-          },
-          "parameters": [
-            "UI",
-            "Opacity",
-            "=",
-            "224"
           ]
         },
         {
@@ -6345,6 +6334,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Controls",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7888,6 +7878,274 @@
                         "1"
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"BasicShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one bullet that deals 2 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"BigShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one slow bullet that deals 5 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"SniperShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one fast bullet that deals 1 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"Dash\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Makes you fast and invincible for a time.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"Heal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Heals you for 2 HP\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Heal 1 HP, but you receive double DMG for a time.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Take 1 DMG and blind yourself for a second.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[0]",
+                            "=",
+                            "\"AbParaJump\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Jump from the shock of pain.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": []
+                    }
                   ]
                 },
                 {
@@ -7944,6 +8202,274 @@
                         "1"
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"BasicShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one bullet that deals 2 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"BigShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one slow bullet that deals 5 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"SniperShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one fast bullet that deals 1 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"Dash\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Makes you fast and invincible for a time.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"Heal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Heals you for 2 HP\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Heal 1 HP, but you receive double DMG for a time.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Take 1 DMG and blind yourself for a second.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[1]",
+                            "=",
+                            "\"AbParaJump\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Jump from the shock of pain.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": []
+                    }
                   ]
                 },
                 {
@@ -8000,6 +8526,274 @@
                         "1"
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"BasicShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one bullet that deals 2 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"BigShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one slow bullet that deals 5 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"SniperShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one fast bullet that deals 1 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"Dash\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Makes you fast and invincible for a time.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"Heal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Heals you for 2 HP\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Heal 1 HP, but you receive double DMG for a time.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Take 1 DMG and blind yourself for a second.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[2]",
+                            "=",
+                            "\"AbParaJump\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Jump from the shock of pain.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": []
+                    }
                   ]
                 },
                 {
@@ -8055,6 +8849,274 @@
                         "=",
                         "1"
                       ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"0\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"BasicShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one bullet that deals 2 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"BigShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one slow bullet that deals 5 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"SniperShot\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Fires one fast bullet that deals 1 DMG\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"Dash\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Makes you fast and invincible for a time.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"Heal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Heals you for 2 HP\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"AbHeal\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Heal 1 HP, but you receive double DMG for a time.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"AbHurtBlind\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Take 1 DMG and blind yourself for a second.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjetTxt"
+                          },
+                          "parameters": [
+                            "Player",
+                            "CardHand[3]",
+                            "=",
+                            "\"AbParaJump\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CardExplanationText",
+                            "Text",
+                            "=",
+                            "\"Jump from the shock of pain.\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": []
                     }
                   ]
                 },
