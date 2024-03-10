@@ -3351,6 +3351,7 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
@@ -20650,10 +20651,6 @@
     {
       "name": "FlashOpacity",
       "type": "Flash::FlashOpacity"
-    },
-    {
-      "name": "FlashTransitionPainter",
-      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",
