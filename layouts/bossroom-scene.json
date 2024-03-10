@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3912220107354005,
+    "zoomFactor": 1.2081677499978227,
     "windowMask": false
   },
   "objectsGroups": [
@@ -6075,13 +6075,13 @@
             "objectName": "CardHandSprites3"
           },
           {
-            "objectName": "DebugText"
-          },
-          {
             "objectName": "DrawPileIcon"
           },
           {
             "objectName": "DiscardPileIcon"
+          },
+          {
+            "objectName": "DebugText"
           },
           {
             "objectName": "DebugText2"
@@ -6288,6 +6288,22 @@
           },
           "parameters": [
             "CardSlots"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DebugText"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "DebugText2"
           ]
         },
         {
@@ -8079,7 +8095,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "CardSelect",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9504,6 +9519,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardHand",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
