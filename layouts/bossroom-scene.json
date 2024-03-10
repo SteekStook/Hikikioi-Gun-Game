@@ -6651,12 +6651,28 @@
       "conditions": [
         {
           "type": {
-            "inverted": true,
-            "value": "MousePointerLock::isPointerLocked"
+            "value": "BuiltinCommonInstructions::Or"
           },
-          "parameters": [
-            "",
-            ""
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "MousePointerLock::isPointerLocked"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneJustResumed"
+              },
+              "parameters": [
+                ""
+              ]
+            }
           ]
         }
       ],
@@ -6686,7 +6702,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Controls",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9489,7 +9504,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "CardHand",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9566,7 +9580,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -10116,6 +10129,7 @@
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -12164,7 +12178,7 @@
                                     "Player",
                                     "CardHand[1]",
                                     "=",
-                                    "\"HurtBlind\""
+                                    "\"AbHurtBlind\""
                                   ]
                                 },
                                 {
@@ -17698,6 +17712,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "BossActions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
