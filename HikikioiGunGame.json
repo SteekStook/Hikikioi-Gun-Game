@@ -979,6 +979,33 @@
         "name": "assets\\Visuals\\assets_Visuals_Floor_Front.png4.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/assets_Visuals_HikikioiSkybox.png5Darker.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png5Darker.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/assets_Visuals_HikikioiSkybox.png6Darker.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png6Darker.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/assets_Visuals_HikikioiSkybox.png8Darker.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png8Darker.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
