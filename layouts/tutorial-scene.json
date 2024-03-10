@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8388679565518401,
+    "zoomFactor": 1.208167749997814,
     "windowMask": false
   },
   "objectsGroups": [
@@ -20650,6 +20650,10 @@
     {
       "name": "FlashOpacity",
       "type": "Flash::FlashOpacity"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",
