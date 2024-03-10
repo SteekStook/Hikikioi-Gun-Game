@@ -1051,6 +1051,15 @@
         "name": "assets\\Visuals\\CardUseIntroText.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiDestructableWall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiDestructableWall.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3661146991112123,
+    "zoomFactor": 0.7850322350976701,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1094,7 +1094,7 @@
       "persistentUuid": "4863525b-95af-4e1e-a20b-7319de6799cc",
       "width": 5008,
       "x": -256,
-      "y": -384,
+      "y": 584,
       "z": -1088,
       "zOrder": 38,
       "numberProperties": [],
@@ -3271,7 +3271,7 @@
         "frontFaceResourceName": "",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
-        "leftFaceResourceName": "New3DBox_Front6",
+        "leftFaceResourceName": "assets\\Visuals\\HikikioiDestructableWall.png",
         "rightFaceResourceName": "",
         "topFaceResourceName": "",
         "bottomFaceResourceName": "",
