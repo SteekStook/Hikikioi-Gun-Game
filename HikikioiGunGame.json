@@ -1060,6 +1060,15 @@
         "name": "assets\\Visuals\\HikikioiDestructableWall.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiTutDoor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiTutDoor.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
