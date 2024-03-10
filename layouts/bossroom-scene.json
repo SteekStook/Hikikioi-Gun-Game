@@ -2615,9 +2615,9 @@
       "textAlignment": "left",
       "characterSize": 16,
       "color": {
-        "b": 66,
-        "g": 0,
-        "r": 42
+        "b": 92,
+        "g": 29,
+        "r": 111
       },
       "content": {
         "bold": false,
@@ -2637,7 +2637,7 @@
         "font": "mononoki-Regular.ttf",
         "textAlignment": "left",
         "characterSize": 16,
-        "color": "42;0;66"
+        "color": "111;29;92"
       }
     },
     {
@@ -6718,6 +6718,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Controls",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8095,6 +8096,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardSelect",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -15822,6 +15824,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "AbHurtBlind",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -15856,7 +15859,7 @@
                             "ScreenFlash",
                             "Opacity",
                             "=",
-                            "240"
+                            "200"
                           ]
                         }
                       ]
@@ -17259,7 +17262,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phase",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17616,8 +17618,8 @@
                   "parameters": [
                     "AddCardsToDeckText",
                     "AddCardsToDeckText",
-                    "DeckCount.X()",
-                    "DeckCount.Y()-24",
+                    "DeckLabelText.X()+4",
+                    "DeckLabelText.Y()-16",
                     "\"UI\""
                   ]
                 },
