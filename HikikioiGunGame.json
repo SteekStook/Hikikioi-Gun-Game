@@ -1006,6 +1006,51 @@
         "name": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png8Darker.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/MoveControlsIntroText.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\MoveControlsIntroText.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/MoveControlsIntroText1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\MoveControlsIntroText1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/LookControlsIntroText.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\LookControlsIntroText.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/CardSelectIntroText.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\CardSelectIntroText.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/CardUseIntroText.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\CardUseIntroText.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
