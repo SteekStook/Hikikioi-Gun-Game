@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.2081677499978227,
+    "zoomFactor": 1.7400465719715292,
     "windowMask": false
   },
   "objectsGroups": [
@@ -5729,9 +5729,9 @@
       "textAlignment": "center",
       "characterSize": 16,
       "color": {
-        "b": 66,
+        "b": 0,
         "g": 0,
-        "r": 42
+        "r": 0
       },
       "content": {
         "bold": false,
@@ -5751,7 +5751,7 @@
         "font": "mononoki-Regular.ttf",
         "textAlignment": "center",
         "characterSize": 16,
-        "color": "42;0;66"
+        "color": "0;0;0"
       }
     },
     {
@@ -19311,7 +19311,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "AttackCollisions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
