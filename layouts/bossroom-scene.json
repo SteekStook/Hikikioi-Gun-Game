@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0937500000000455,
+    "zoomFactor": 1.1306316110253083,
     "windowMask": false
   },
   "objectsGroups": [
@@ -768,6 +768,21 @@
       "y": -128,
       "z": -1088,
       "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "ScreenEffect",
+      "persistentUuid": "375c8abe-635d-45d2-8e91-7697e628cb5c",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 42,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -6002,6 +6017,40 @@
         "bottomFaceResourceRepeat": true,
         "materialType": "Basic"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "ScreenEffect",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter",
+          "Timer": 1,
+          "Color": "255;255;255",
+          "Type": "",
+          "Direction": "",
+          "MaxOpacity": 255
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 113,
+        "g": 174,
+        "r": 89
+      },
+      "outlineColor": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none"
     }
   ],
   "objectsFolderStructure": {
@@ -6135,6 +6184,9 @@
       },
       {
         "objectName": "AberSkyBox"
+      },
+      {
+        "objectName": "ScreenEffect"
       },
       {
         "objectName": "BoundaryBox"
@@ -15341,6 +15393,21 @@
                         "Player",
                         "\"DashInvincTime\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                      },
+                      "parameters": [
+                        "ScreenEffect",
+                        "FlashTransitionPainter",
+                        "\"108;237;237\"",
+                        "0.6",
+                        "\"Flash\"",
+                        "\"Backward\"",
+                        "30",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -15387,6 +15454,21 @@
                         "+",
                         "2"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                      },
+                      "parameters": [
+                        "ScreenEffect",
+                        "FlashTransitionPainter",
+                        "\"164;242;183\"",
+                        "0.2",
+                        "\"Flash\"",
+                        "\"Backward\"",
+                        "25",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -15432,6 +15514,21 @@
                         "HP",
                         "+",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                      },
+                      "parameters": [
+                        "ScreenEffect",
+                        "FlashTransitionPainter",
+                        "\"99;180;123\"",
+                        "0.2",
+                        "\"Flash\"",
+                        "\"Backward\"",
+                        "25",
+                        ""
                       ]
                     },
                     {
@@ -19773,6 +19870,10 @@
     {
       "name": "FlashOpacity",
       "type": "Flash::FlashOpacity"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",
