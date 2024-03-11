@@ -2392,7 +2392,7 @@
         "depth": 64,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\HikikioiAberTurretBullet.png",
+        "frontFaceResourceName": "assets\\Visuals\\HikikioiAberTurret.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
