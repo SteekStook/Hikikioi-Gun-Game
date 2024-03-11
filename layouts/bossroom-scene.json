@@ -19023,7 +19023,7 @@
                       "parameters": [
                         "BossTurret",
                         "FireBullet",
-                        "BossTurret.X()+20",
+                        "BossTurret.X()",
                         "BossTurret.Y()+20",
                         "BossTurretBullets",
                         "Player",
