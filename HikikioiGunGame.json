@@ -1069,6 +1069,33 @@
         "name": "assets\\Visuals\\HikikioiTutDoor.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiBasicBullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiBasicBullet.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiBigBullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiBigBullet.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiSniperBullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiSniperBullet.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
