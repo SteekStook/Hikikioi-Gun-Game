@@ -1096,6 +1096,24 @@
         "name": "assets\\Visuals\\HikikioiSniperBullet.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiAberBasicBullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiAberBasicBullet.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiAberGSpike.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiAberGSpike.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
