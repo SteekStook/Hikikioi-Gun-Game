@@ -15125,7 +15125,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "CardActions",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -15824,7 +15823,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "AbHurtBlind",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -15859,7 +15857,7 @@
                             "ScreenFlash",
                             "Opacity",
                             "=",
-                            "200"
+                            "185"
                           ]
                         }
                       ]
