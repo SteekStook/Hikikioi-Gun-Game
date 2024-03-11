@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.7400465719715292,
+    "zoomFactor": 1.0937500000000455,
     "windowMask": false
   },
   "objectsGroups": [
@@ -95,6 +95,18 @@
         },
         {
           "name": "BossHealthBar"
+        },
+        {
+          "name": "DrawPileIcon"
+        },
+        {
+          "name": "DiscardPileIcon"
+        },
+        {
+          "name": "DeckLabelText"
+        },
+        {
+          "name": "DiscardLabelText"
         }
       ]
     }
@@ -15538,7 +15550,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "Dash",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -15823,6 +15834,7 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
+                  "folded": true,
                   "name": "AbHurtBlind",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
