@@ -1114,6 +1114,15 @@
         "name": "assets\\Visuals\\HikikioiAberGSpike.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiAberTurretBullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiAberTurretBullet.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
