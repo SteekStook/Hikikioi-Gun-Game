@@ -1101,6 +1101,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "UI",
+      "name": "ScreenEffect",
+      "persistentUuid": "9cc69ee0-b3e9-41c6-aa68-79b2e618ddcb",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1999,7 +2014,7 @@
         "depth": 16,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "frontFaceResourceName": "assets\\Visuals\\HikikioiBasicBullet.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
@@ -2043,7 +2058,7 @@
         "depth": 64,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "frontFaceResourceName": "assets\\Visuals\\HikikioiBigBullet.png",
         "backFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
@@ -2111,7 +2126,7 @@
         "depth": 8,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
+        "frontFaceResourceName": "assets\\Visuals\\HikikioiSniperBullet.png",
         "backFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "assets\\Visuals\\New3DBox_Front2.png",
@@ -6749,6 +6764,40 @@
         "bottomFaceResourceRepeat": true,
         "materialType": "Basic"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "ScreenEffect",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter",
+          "Timer": 1,
+          "Color": "255;255;255",
+          "Type": "",
+          "Direction": "",
+          "MaxOpacity": 255
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 113,
+        "g": 174,
+        "r": 89
+      },
+      "outlineColor": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none"
     }
   ],
   "objectsFolderStructure": {
@@ -6917,6 +6966,9 @@
       },
       {
         "objectName": "ScreenFade"
+      },
+      {
+        "objectName": "ScreenEffect"
       }
     ]
   },
@@ -7560,7 +7612,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8894,6 +8945,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardSelect",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -15858,7 +15910,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "CardActions",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -16063,6 +16114,21 @@
                         "Player",
                         "\"DashInvincTime\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                      },
+                      "parameters": [
+                        "ScreenEffect",
+                        "FlashTransitionPainter",
+                        "\"108;237;237\"",
+                        "0.6",
+                        "\"Flash\"",
+                        "\"Backward\"",
+                        "30",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -16109,6 +16175,21 @@
                         "+",
                         "2"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                      },
+                      "parameters": [
+                        "ScreenEffect",
+                        "FlashTransitionPainter",
+                        "\"164;242;183\"",
+                        "0.2",
+                        "\"Flash\"",
+                        "\"Backward\"",
+                        "25",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -16154,6 +16235,21 @@
                         "HP",
                         "+",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+                      },
+                      "parameters": [
+                        "ScreenEffect",
+                        "FlashTransitionPainter",
+                        "\"99;180;123\"",
+                        "0.2",
+                        "\"Flash\"",
+                        "\"Backward\"",
+                        "25",
+                        ""
                       ]
                     },
                     {
@@ -20651,6 +20747,10 @@
     {
       "name": "FlashOpacity",
       "type": "Flash::FlashOpacity"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
     {
       "name": "Flippable",
