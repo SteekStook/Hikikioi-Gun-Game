@@ -1150,6 +1150,24 @@
         "name": "assets\\Visuals\\HikikioiAberSquareIdle.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Visuals_HikikioiAberSquareIdle.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\Visuals\\HikikioiAberSquareIdle.png2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiAberSquare1Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiAberSquare1Idle.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
