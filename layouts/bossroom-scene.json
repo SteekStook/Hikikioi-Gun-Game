@@ -17423,13 +17423,11 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phase",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -17477,6 +17475,16 @@
                         "Phase",
                         "=",
                         "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::Cube3DObject::SetFaceResource"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"front\"",
+                        "assets\\Visuals\\HikikioiAberSquare1Hurt.png"
                       ]
                     }
                   ]
@@ -17883,6 +17891,102 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene3D::Cube3DObject::SetFaceResource"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"front\"",
+                    "assets\\Visuals\\HikikioiAberSquare1Dead00.png"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::Cube3DObject::SetFaceResource"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"front\"",
+                    "assets\\Visuals\\HikikioiAberSquare1Dead01.png"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::Cube3DObject::SetFaceResource"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"front\"",
+                    "assets\\Visuals\\HikikioiAberSquare1Dead02.png"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::Cube3DObject::SetFaceResource"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"front\"",
+                    "assets\\Visuals\\HikikioiAberSquare1Dead03.png"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -17923,6 +18027,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -18015,6 +18120,16 @@
                         },
                         {
                           "type": {
+                            "value": "Scene3D::Cube3DObject::SetFaceResource"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"front\"",
+                            "assets\\Visuals\\HikikioiAberSquare1Idle.png"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
@@ -18081,6 +18196,16 @@
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Cube3DObject::SetFaceResource"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"front\"",
+                            "assets\\Visuals\\HikikioiAberSquare1Fire.png"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "ResetObjectTimer"
@@ -18234,6 +18359,16 @@
                     },
                     {
                       "type": {
+                        "value": "Scene3D::Cube3DObject::SetFaceResource"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"front\"",
+                        "assets\\Visuals\\HikikioiAberSquare1Fire.png"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "ResetObjectTimer"
                       },
                       "parameters": [
@@ -18307,6 +18442,16 @@
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Cube3DObject::SetFaceResource"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"front\"",
+                            "assets\\Visuals\\HikikioiAberSquare1Fire.png"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "ResetObjectTimer"
@@ -18616,7 +18761,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -18709,6 +18853,16 @@
                         },
                         {
                           "type": {
+                            "value": "Scene3D::Cube3DObject::SetFaceResource"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"front\"",
+                            "assets\\Visuals\\HikikioiAberSquare1Hurt.png"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
@@ -18787,6 +18941,16 @@
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Cube3DObject::SetFaceResource"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"front\"",
+                            "assets\\Visuals\\HikikioiAberSquare1HurtFire.png"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "ResetObjectTimer"
@@ -19036,6 +19200,16 @@
                     },
                     {
                       "type": {
+                        "value": "Scene3D::Cube3DObject::SetFaceResource"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"front\"",
+                        "assets\\Visuals\\HikikioiAberSquare1HurtFire.png"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "ResetObjectTimer"
                       },
                       "parameters": [
@@ -19109,6 +19283,16 @@
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "Scene3D::Cube3DObject::SetFaceResource"
+                          },
+                          "parameters": [
+                            "Boss",
+                            "\"front\"",
+                            "assets\\Visuals\\HikikioiAberSquare1HurtFire.png"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "ResetObjectTimer"
