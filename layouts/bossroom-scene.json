@@ -6407,6 +6407,17 @@
         },
         {
           "type": {
+            "value": "FirstPersonCamera::LookFromObjectEyes"
+          },
+          "parameters": [
+            "",
+            "Player",
+            "\"Skybox\"",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Scene3D::SetCameraZ"
           },
           "parameters": [
@@ -6702,17 +6713,6 @@
             "DirectShot",
             "=",
             "RandomInRange(0,1)"
-          ]
-        },
-        {
-          "type": {
-            "value": "FirstPersonCamera::LookFromObjectEyes"
-          },
-          "parameters": [
-            "",
-            "Player",
-            "\"Skybox\"",
-            ""
           ]
         }
       ]
