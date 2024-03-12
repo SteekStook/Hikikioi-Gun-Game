@@ -18,12 +18,139 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0580714804313676,
+    "zoomFactor": 1.0235568070420362,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "layer": "",
+      "name": "ThankYouText",
+      "persistentUuid": "5da28d89-aa9c-445b-9ede-0489ce90cb3c",
+      "width": 400,
+      "x": 120,
+      "y": 16,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "ScreenEffect",
+      "name": "ScreenEffect",
+      "persistentUuid": "8d2adb79-a220-4d50-b08a-b0922313a343",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
+      "layer": "",
+      "name": "ThankYouText",
+      "persistentUuid": "09ac773e-fb11-4c0b-967c-49d745b38782",
+      "width": 640,
+      "x": 0,
+      "y": -40,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 40,
+      "layer": "",
+      "name": "CreditsSteekStook",
+      "persistentUuid": "04658e15-876d-4532-83c1-326f2e695646",
+      "width": 272,
+      "x": 184,
+      "y": 104,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 48,
+      "layer": "",
+      "name": "CreditsFreeAssetsMessage",
+      "persistentUuid": "dfe98d02-285f-4fb8-ac1d-2944a2f35b26",
+      "width": 592,
+      "x": 24,
+      "y": 200,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 360,
+      "layer": "",
+      "name": "ThankYouText",
+      "persistentUuid": "466c057e-89b4-4f2f-83c0-66020738858b",
+      "width": 16,
+      "x": -32,
+      "y": 0,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "MainMenuButton",
+      "persistentUuid": "76d909bf-3e60-40fc-97fc-e73881c7163f",
+      "width": 0,
+      "x": 224,
+      "y": 280,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 360,
+      "layer": "ScreenEffect",
+      "name": "ScreenFlash",
+      "persistentUuid": "512a76eb-aa45-42da-9444-ca3aa3bd8dd7",
+      "width": 640,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
   "objects": [
     {
       "assetStoreId": "",
@@ -63,17 +190,17 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "DeckCount",
+      "name": "ThankYouText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "10",
+      "string": "Thank You For Playing!",
       "font": "mononoki-Regular.ttf",
       "textAlignment": "center",
-      "characterSize": 20,
+      "characterSize": 32,
       "color": {
         "b": 0,
         "g": 0,
@@ -93,12 +220,253 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "10",
+        "text": "Thank You For Playing!",
         "font": "mononoki-Regular.ttf",
         "textAlignment": "center",
-        "characterSize": 20,
+        "characterSize": 32,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CreditsSteekStook",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "- Did Pretty Much Everything -\nSteek Stook (:)=",
+      "font": "mononoki-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 16,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "- Did Pretty Much Everything -\nSteek Stook (:)=",
+        "font": "mononoki-Regular.ttf",
+        "textAlignment": "center",
+        "characterSize": 16,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "CreditsFreeAssetsMessage",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "(There are some assets, like the images used in the tutorial or the font used throughout this game, that I got online. While it said in their respective Licenses that I am allowed to use them without attribution, I will be listing out and giving links that lead to where you can get them for yourselves in the description of the Itch.io page this game is hosted on.)",
+      "font": "mononoki-Regular.ttf",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "(There are some assets, like the images used in the tutorial or the font used throughout this game, that I got online. While it said in their respective Licenses that I am allowed to use them without attribution, I will be listing out and giving links that lead to where you can get them for yourselves in the description of the Itch.io page this game is hosted on.)",
+        "font": "mononoki-Regular.ttf",
+        "textAlignment": "center",
+        "characterSize": 10,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+      "name": "MainMenuButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 24,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Main Menu",
+          "font": "mononoki-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 26,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Main Menu",
+            "font": "mononoki-Regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 26,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 22,
+          "width": 192
+        }
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ScreenFlash",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlashOpacity",
+          "type": "Flash::FlashOpacity",
+          "TweenBehavior": "Tween",
+          "HalfPeriodTime": 1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TargetOpacity": 0,
+          "StartingOpacity": 2.0247e-320
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "ScreenFlash",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\ScreenFlash.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -108,11 +476,134 @@
         "objectName": "ScreenEffect"
       },
       {
-        "objectName": "DeckCount"
+        "objectName": "ScreenFlash"
+      },
+      {
+        "objectName": "ThankYouText"
+      },
+      {
+        "objectName": "CreditsSteekStook"
+      },
+      {
+        "objectName": "CreditsFreeAssetsMessage"
+      },
+      {
+        "objectName": "MainMenuButton"
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "ScreenFlash",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+          },
+          "parameters": [
+            "ScreenEffect",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "2",
+            "\"Flash\"",
+            "\"Backward\"",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MousePointerLock::ExitPointerLock"
+          },
+          "parameters": [
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "MainMenuButton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
+          },
+          "parameters": [
+            "ScreenEffect",
+            "FlashTransitionPainter",
+            "\"0;0;0\"",
+            "1",
+            "\"Flash\"",
+            "\"Forward\"",
+            "255",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"MainMenu scene\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,
@@ -140,29 +631,38 @@
           "width": 0
         }
       ],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "ScreenEffect",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
     }
   ],
   "behaviorsSharedData": [
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlashOpacity",
+      "type": "Flash::FlashOpacity"
     },
     {
       "name": "FlashTransitionPainter",
@@ -187,6 +687,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

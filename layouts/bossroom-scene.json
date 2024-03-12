@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 2.053885174996304,
+    "zoomFactor": 1.4260755261381426,
     "windowMask": false
   },
   "objectsGroups": [
@@ -791,11 +791,11 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 360,
+      "height": 368,
       "layer": "UI",
       "name": "Static",
       "persistentUuid": "8c4f63b0-0ab1-4a00-9d58-ae46986dc3af",
-      "width": 632,
+      "width": 648,
       "x": 0,
       "y": 0,
       "zOrder": 43,
@@ -18119,9 +18119,9 @@
                     "Static",
                     "Tween",
                     "\"StaticOn\"",
-                    "255",
+                    "300",
                     "\"linear\"",
-                    "6",
+                    "8",
                     ""
                   ]
                 }
@@ -18138,6 +18138,24 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Bullets",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "BossGSpike",
+                        ""
+                      ]
+                    },
                     {
                       "type": {
                         "value": "Scene3D::Cube3DObject::SetFaceResource"
