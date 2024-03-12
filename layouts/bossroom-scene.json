@@ -2546,7 +2546,7 @@
         "depth": 32,
         "enableTextureTransparency": false,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\BossAberCardsBullet_Front.png",
+        "frontFaceResourceName": "assets\\Visuals\\BossAberCardsBullet_Front.png2",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",

@@ -1267,6 +1267,15 @@
         "name": "assets\\Visuals\\Static3.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Visuals_BossAberCardsBullet_Front.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\Visuals\\BossAberCardsBullet_Front.png2",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
