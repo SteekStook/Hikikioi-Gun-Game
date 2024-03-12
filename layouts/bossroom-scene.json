@@ -18,7 +18,11 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
+<<<<<<< HEAD
     "zoomFactor": 0.4321479464775269,
+=======
+    "zoomFactor": 0.6875040483224912,
+>>>>>>> parent of 8d0b01d (Added newer Aber sprites)
     "windowMask": false
   },
   "objectsGroups": [
@@ -1924,7 +1928,7 @@
         "depth": 100,
         "enableTextureTransparency": true,
         "facesOrientation": "Y",
-        "frontFaceResourceName": "assets\\Visuals\\HikikioiAberSquare1Idle.png",
+        "frontFaceResourceName": "assets\\Visuals\\HikikioiAberSquareIdle.png",
         "backFaceResourceName": "",
         "backFaceUpThroughWhichAxisRotation": "X",
         "leftFaceResourceName": "",
@@ -6225,14 +6229,6 @@
         },
         {
           "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "BossAberBulletFirer"
-          ]
-        },
-        {
-          "type": {
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
@@ -6792,7 +6788,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -17434,7 +17429,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phase",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17903,6 +17897,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "BossActions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17934,6 +17929,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -18627,7 +18623,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
