@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8671548609405105,
+    "zoomFactor": 0.477355165405176,
     "windowMask": false
   },
   "objectsGroups": [
@@ -768,21 +768,6 @@
       "y": -128,
       "z": -1088,
       "zOrder": 41,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "UI",
-      "name": "ScreenEffect",
-      "persistentUuid": "375c8abe-635d-45d2-8e91-7697e628cb5c",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 42,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
