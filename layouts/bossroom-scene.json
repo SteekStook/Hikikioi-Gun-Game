@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4321479464775269,
+    "zoomFactor": 0.8388679565518478,
     "windowMask": false
   },
   "objectsGroups": [
@@ -760,7 +760,7 @@
       "customSize": true,
       "depth": 2176,
       "height": 2176,
-      "layer": "Skybox",
+      "layer": "",
       "name": "AberSkyBox",
       "persistentUuid": "5fae60d3-09c3-4b9d-b942-3b0cc4283e72",
       "width": 2176,
@@ -6402,17 +6402,6 @@
             "",
             "Player",
             "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "FirstPersonCamera::LookFromObjectEyes"
-          },
-          "parameters": [
-            "",
-            "Player",
-            "\"Skybox\"",
             ""
           ]
         },
@@ -19866,39 +19855,6 @@
     }
   ],
   "layers": [
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "cameraType": "",
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Skybox",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
