@@ -1132,6 +1132,24 @@
         "name": "assets\\Visuals\\HikikioiAberTurret.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiAberIdle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiAberIdle.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiAberSquareIdle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiAberSquareIdle.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
