@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8388679565518478,
+    "zoomFactor": 2.053885174996304,
     "windowMask": false
   },
   "objectsGroups": [
@@ -783,6 +783,22 @@
       "x": 0,
       "y": 0,
       "zOrder": 42,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 360,
+      "layer": "UI",
+      "name": "Static",
+      "persistentUuid": "8c4f63b0-0ab1-4a00-9d58-ae46986dc3af",
+      "width": 632,
+      "x": 0,
+      "y": 0,
+      "zOrder": 43,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -6051,6 +6067,179 @@
       "absoluteCoordinates": false,
       "clearBetweenFrames": true,
       "antialiasing": "none"
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Static",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Static",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.041666666666666664,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\Static0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\Static1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\Static2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\Static3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 0
+                      },
+                      {
+                        "x": 1920,
+                        "y": 1080
+                      },
+                      {
+                        "x": 0,
+                        "y": 1080
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -6186,6 +6375,9 @@
         "objectName": "AberSkyBox"
       },
       {
+        "objectName": "Static"
+      },
+      {
         "objectName": "ScreenEffect"
       },
       {
@@ -6262,6 +6454,17 @@
             "Opacity",
             "=",
             "250"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Static",
+            "Opacity",
+            "=",
+            "0"
           ]
         },
         {
@@ -17905,151 +18108,184 @@
                     "=",
                     "3"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "Scene3D::Cube3DObject::SetFaceResource"
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "Boss",
-                    "\"front\"",
-                    "assets\\Visuals\\HikikioiAberSquare1Dead00.png"
+                    "Static",
+                    "Tween",
+                    "\"StaticOn\"",
+                    "255",
+                    "\"linear\"",
+                    "6",
+                    ""
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::Cube3DObject::SetFaceResource"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "\"front\"",
-                    "assets\\Visuals\\HikikioiAberSquare1Dead01.png"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetY"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "Scale",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::Base3DBehavior::SetZ"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "Object3D",
-                    "=",
-                    "50"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::Cube3DObject::SetFaceResource"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "\"front\"",
-                    "assets\\Visuals\\HikikioiAberSquare1Dead02.png"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetY"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "Scale",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::Base3DBehavior::SetZ"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "Object3D",
-                    "=",
-                    "30"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::Cube3DObject::SetFaceResource"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "\"front\"",
-                    "assets\\Visuals\\HikikioiAberSquare1Dead03.png"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetY"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "Scale",
-                    "=",
-                    "0.5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::Base3DBehavior::SetZ"
-                  },
-                  "parameters": [
-                    "Boss",
-                    "Object3D",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "2"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene3D::Cube3DObject::SetFaceResource"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"front\"",
+                        "assets\\Visuals\\HikikioiAberSquare1Dead00.png"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::Cube3DObject::SetFaceResource"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"front\"",
+                        "assets\\Visuals\\HikikioiAberSquare1Dead01.png"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetY"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "Scale",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::Base3DBehavior::SetZ"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "Object3D",
+                        "=",
+                        "50"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::Cube3DObject::SetFaceResource"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"front\"",
+                        "assets\\Visuals\\HikikioiAberSquare1Dead02.png"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetY"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "Scale",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::Base3DBehavior::SetZ"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "Object3D",
+                        "=",
+                        "30"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::Cube3DObject::SetFaceResource"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"front\"",
+                        "assets\\Visuals\\HikikioiAberSquare1Dead03.png"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ScalableCapability::ScalableBehavior::SetY"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "Scale",
+                        "=",
+                        "0.5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::Base3DBehavior::SetZ"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "Object3D",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "4"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Credits scene\"",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]

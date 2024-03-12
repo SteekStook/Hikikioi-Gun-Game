@@ -1231,6 +1231,42 @@
         "name": "assets\\Visuals\\HikikioiAberSquare1Dead03.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/Static0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\Static0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/Static1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\Static1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/Static2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\Static2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/Static3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\Static3.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1257,6 +1293,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/pause-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits-scene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
