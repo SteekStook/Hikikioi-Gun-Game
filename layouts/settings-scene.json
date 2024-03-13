@@ -1,13 +1,13 @@
 {
-  "b": 209,
+  "b": 0,
   "disableInputWhenNotFocused": true,
-  "mangledName": "MainMenu_32scene",
-  "name": "MainMenu scene",
-  "r": 209,
+  "mangledName": "Settings_32scene",
+  "name": "Settings scene",
+  "r": 0,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
-  "v": 209,
+  "v": 0,
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.9578683769070492,
+    "zoomFactor": 1.4260755261380795,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -29,44 +29,12 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "name": "StartButton",
-      "persistentUuid": "7bd79e3f-2ad5-4014-8b89-3ec27c6aa138",
+      "name": "FullscreenButton",
+      "persistentUuid": "b38e8bf9-d9a1-4762-89a0-53571d50d04c",
       "width": 0,
-      "x": 64,
-      "y": 48,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 32,
-      "height": 64,
-      "layer": "",
-      "name": "SettingsButton",
-      "persistentUuid": "fdddbc95-6d45-4ed8-9f93-38376713c97f",
-      "width": 160,
-      "x": 80,
-      "y": 144,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 32,
-      "height": 64,
-      "layer": "",
-      "name": "QuitButton",
-      "persistentUuid": "6fed2dc5-821a-4b8d-be5b-32a733b72d7e",
-      "width": 128,
-      "x": 96,
-      "y": 240,
-      "zOrder": 5,
+      "x": 224,
+      "y": 280,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -76,12 +44,43 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "name": "Logo",
-      "persistentUuid": "5dddbb3b-61db-49d8-b3c3-1006e4fcb056",
+      "name": "VolumeSlider",
+      "persistentUuid": "35422731-db03-4d74-b004-7ca3b7474c88",
       "width": 0,
-      "x": 136,
-      "y": -60,
+      "x": 183,
+      "y": 184,
       "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "BackButton",
+      "persistentUuid": "37f04dc1-e9bb-43a2-8279-db1ba592ad18",
+      "width": 0,
+      "x": 16,
+      "y": 16,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 64,
+      "layer": "",
+      "name": "FullscreenButton",
+      "persistentUuid": "3707c775-25ed-48d5-9ce0-6a7b96cabaf2",
+      "width": 640,
+      "x": 0,
+      "y": -80,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -90,14 +89,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 360,
+      "height": 24,
       "layer": "",
-      "name": "MainMenuBack",
-      "persistentUuid": "af9089a8-87a5-4c65-9ac9-92299bb38dba",
-      "width": 640,
-      "x": 0,
-      "y": 0,
-      "zOrder": 1,
+      "name": "VolumeLabelText",
+      "persistentUuid": "c8b2849b-a277-488a-879b-8fb9b2451fbc",
+      "width": 148,
+      "x": 246,
+      "y": 152,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -105,365 +104,325 @@
   ],
   "objects": [
     {
-      "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-      "name": "StartButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 6,
-        "BottomPadding": 24,
-        "TopPadding": 24,
-        "HoveredFadeOutDuration": 0.25
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 22,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Hovered.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 22,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Idle.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "Start",
-          "font": "mononoki-Regular.ttf",
-          "textAlignment": "center",
-          "characterSize": 26,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Start",
-            "font": "mononoki-Regular.ttf",
-            "textAlignment": "center",
-            "characterSize": 26,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 16,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Pressed.png",
-          "tiled": true,
-          "topMargin": 22,
-          "width": 192
-        }
-      }
-    },
-    {
-      "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-      "name": "SettingsButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 6,
-        "BottomPadding": 24,
-        "TopPadding": 24,
-        "HoveredFadeOutDuration": 0.25
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 22,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Hovered.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 22,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Idle.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "Settings",
-          "font": "mononoki-Regular.ttf",
-          "textAlignment": "center",
-          "characterSize": 26,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Settings",
-            "font": "mononoki-Regular.ttf",
-            "textAlignment": "center",
-            "characterSize": 26,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 16,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Pressed.png",
-          "tiled": true,
-          "topMargin": 22,
-          "width": 192
-        }
-      }
-    },
-    {
-      "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
-      "name": "QuitButton",
-      "type": "PanelSpriteButton::PanelSpriteButton",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "LeftPadding": 16,
-        "RightPadding": 16,
-        "PressedLabelOffsetY": 6,
-        "BottomPadding": 24,
-        "TopPadding": 24,
-        "HoveredFadeOutDuration": 0.25
-      },
-      "childrenContent": {
-        "Hovered": {
-          "bottomMargin": 22,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Hovered.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        },
-        "Idle": {
-          "bottomMargin": 22,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Idle.png",
-          "tiled": true,
-          "topMargin": 16,
-          "width": 192
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "Quit",
-          "font": "mononoki-Regular.ttf",
-          "textAlignment": "center",
-          "characterSize": 26,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Quit",
-            "font": "mononoki-Regular.ttf",
-            "textAlignment": "center",
-            "characterSize": 26,
-            "color": "255;255;255"
-          }
-        },
-        "Pressed": {
-          "bottomMargin": 16,
-          "height": 64,
-          "leftMargin": 16,
-          "rightMargin": 16,
-          "texture": "assets\\Visuals\\Black Square Decorated Button_Pressed.png",
-          "tiled": true,
-          "topMargin": 22,
-          "width": 192
-        }
-      }
-    },
-    {
-      "assetStoreId": "",
-      "name": "NewVideo",
-      "type": "Video::VideoObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "opacity": 255,
-        "loop": false,
-        "volume": 100,
-        "videoResource": ""
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Logo",
+      "name": "NewSprite",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "ShakeObject_PositionAngle",
-          "type": "ShakeObject::ShakeObject_PositionAngle"
+      "behaviors": [],
+      "animations": []
+    },
+    {
+      "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+      "name": "FullscreenButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 24,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Fullscreen",
+          "font": "mononoki-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 26,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Fullscreen",
+            "font": "mononoki-Regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 26,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 22,
+          "width": 192
         }
-      ],
-      "animations": [
-        {
-          "name": "Logo",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\Visuals\\HikikioiLogo.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 172,
-                        "y": 143
-                      },
-                      {
-                        "x": 457,
-                        "y": 143
-                      },
-                      {
-                        "x": 457,
-                        "y": 342
-                      },
-                      {
-                        "x": 172,
-                        "y": 342
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
+      }
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "VolumeSlider",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6,
+        "InitialValue": 100,
+        "ShowLabelAtChanges": true
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 28,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "Square White Slider Border.png",
+          "tiled": false,
+          "topMargin": 4,
+          "width": 265
+        },
+        "FillBar": {
+          "bottomMargin": 2,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Square White Slider Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "100%",
+          "font": "mononoki-Regular.ttf",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 221,
+            "g": 221,
+            "r": 221
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "100%",
+            "font": "mononoki-Regular.ttf",
+            "textAlignment": "",
+            "characterSize": 20,
+            "color": "221;221;221"
+          }
+        },
+        "Thumb": {
+          "bottomMargin": 2,
+          "height": 36,
+          "leftMargin": 1,
+          "rightMargin": 1,
+          "texture": "Square White Slider Thumb.png",
+          "tiled": false,
+          "topMargin": 2,
+          "width": 22
         }
-      ]
+      }
+    },
+    {
+      "assetStoreId": "0d2644a425931f79026065835332ea795353d1f99fcd6ccd47ab7927bd0f35ed",
+      "name": "BackButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 24,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Back",
+          "font": "mononoki-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 26,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Back",
+            "font": "mononoki-Regular.ttf",
+            "textAlignment": "center",
+            "characterSize": 26,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "assets\\Visuals\\Black Square Decorated Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 22,
+          "width": 192
+        }
+      }
     },
     {
       "assetStoreId": "",
-      "height": 256,
-      "name": "MainMenuBack",
-      "texture": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png6Darker.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 256,
+      "bold": false,
+      "italic": false,
+      "name": "VolumeLabelText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [],
+      "string": "Volume Slider",
+      "font": "mononoki-Regular.ttf",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Volume Slider",
+        "font": "mononoki-Regular.ttf",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "StartButton"
+        "objectName": "NewSprite"
       },
       {
-        "objectName": "SettingsButton"
+        "objectName": "FullscreenButton"
       },
       {
-        "objectName": "QuitButton"
+        "objectName": "BackButton"
       },
       {
-        "objectName": "NewVideo"
+        "objectName": "VolumeSlider"
       },
       {
-        "objectName": "Logo"
-      },
-      {
-        "objectName": "MainMenuBack"
+        "objectName": "VolumeLabelText"
       }
     ]
   },
@@ -483,18 +442,90 @@
       "actions": [
         {
           "type": {
-            "value": "SetWindowSize"
+            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+          },
+          "parameters": [
+            "VolumeSlider",
+            "=",
+            "GlobalVolume()",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BackButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Back"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Return"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Tab"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
           },
           "parameters": [
             "",
-            "1280",
-            "720",
-            "no"
+            "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
+            "1",
+            "",
+            "",
+            ""
           ]
         },
         {
           "type": {
-            "value": "CenterWindow"
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.25"
+          ]
+        },
+        {
+          "type": {
+            "value": "PopScene"
           },
           "parameters": [
             ""
@@ -504,20 +535,89 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "FullscreenButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Back"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Return"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Tab"
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsFullScreen"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
-            "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+            "value": "PlaySoundCanal"
           },
           "parameters": [
-            "Logo",
-            "ShakeObject_PositionAngle",
-            "0.5",
-            "0.8",
-            "0.8",
-            "0",
-            "0",
+            "",
+            "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
+            "1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetFullScreen"
+          },
+          "parameters": [
+            "",
             "yes",
             ""
           ]
@@ -529,10 +629,53 @@
       "conditions": [
         {
           "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "FullscreenButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Back"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Return"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "Tab"
+              ]
+            }
+          ]
+        },
+        {
+          "type": {
+            "value": "IsFullScreen"
           },
           "parameters": [
-            "StartButton",
             ""
           ]
         }
@@ -556,16 +699,16 @@
             "value": "Wait"
           },
           "parameters": [
-            "0.25"
+            "0.1"
           ]
         },
         {
           "type": {
-            "value": "Scene"
+            "value": "SetFullScreen"
           },
           "parameters": [
             "",
-            "\"Tutorial scene\"",
+            "no",
             ""
           ]
         }
@@ -573,117 +716,16 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "SettingsButton",
-            ""
-          ]
-        }
-      ],
+      "conditions": [],
       "actions": [
         {
           "type": {
-            "value": "PlaySoundCanal"
+            "value": "ModGlobalVolume"
           },
           "parameters": [
             "",
-            "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
-            "1",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.25"
-          ]
-        },
-        {
-          "type": {
-            "value": "PushScene"
-          },
-          "parameters": [
-            "",
-            "\"Settings scene\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "QuitButton",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySoundCanal"
-          },
-          "parameters": [
-            "",
-            "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
-            "1",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.25"
-          ]
-        },
-        {
-          "type": {
-            "value": "Quit"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyReleased"
-          },
-          "parameters": [
-            "",
-            "Num1"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"BossRoom scene\"",
-            ""
+            "=",
+            "VolumeSlider.Value()"
           ]
         }
       ]
@@ -716,7 +758,23 @@
           "width": 0
         }
       ],
-      "effects": []
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -745,8 +803,8 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
-      "name": "ShakeObject_PositionAngle",
-      "type": "ShakeObject::ShakeObject_PositionAngle"
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
