@@ -6590,6 +6590,15 @@
             "Flippable",
             "yes"
           ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Boss",
+            "\"SFXStart\""
+          ]
         }
       ]
     },
@@ -15441,6 +15450,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardActions",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -17643,6 +17653,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Health",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17761,7 +17772,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Boss",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -17771,6 +17781,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Phase",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18492,6 +18503,123 @@
               ]
             },
             {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "SFX",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::IsFiringCooldownActive"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "FireBullet",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"SFXStart\"",
+                        ">=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "WhichActionNext",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\AcerolaJam0SFX BossFire.ogg",
+                        "3",
+                        "",
+                        "",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::IsFiringCooldownActive"
+                      },
+                      "parameters": [
+                        "BossTurret",
+                        "FireBullet",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Boss",
+                        "\"SFXStart\"",
+                        ">=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\AcerolaJam0SFX BossTurretFire.ogg",
+                        "3",
+                        "",
+                        "50",
+                        "RandomFloatInRange(1, 2)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -19061,6 +19189,19 @@
                         },
                         {
                           "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\Audio\\SFX\\AcerolaJam0SFX BossSpike.ogg",
+                            "3",
+                            "",
+                            "",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
@@ -19226,6 +19367,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -19848,7 +19990,6 @@
                   "colorG": 176,
                   "colorR": 74,
                   "creationTime": 0,
-                  "folded": true,
                   "name": "GSpike",
                   "source": "",
                   "type": "BuiltinCommonInstructions::Group",
@@ -19897,6 +20038,19 @@
                             "\"easeOutBack\"",
                             "0.5",
                             "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\Audio\\SFX\\AcerolaJam0SFX BossSpike.ogg",
+                            "3",
+                            "",
+                            "",
+                            "1"
                           ]
                         },
                         {

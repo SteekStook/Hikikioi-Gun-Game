@@ -837,6 +837,36 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX BossFire.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX BossFire.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX BossTurretFire.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX BossTurretFire.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX BossSpike.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX BossSpike.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
