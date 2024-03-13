@@ -877,6 +877,36 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX FireBossAberCardBullet__.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX FireBossAberCardBullet__.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX FireBossAberCardBullet__-1.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX FireBossAberCardBullet__-1.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0StaticSFX.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0StaticSFX.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

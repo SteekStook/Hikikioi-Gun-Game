@@ -17491,6 +17491,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "BulletCollisions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17819,7 +17820,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phase",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17969,6 +17969,19 @@
                     "Player",
                     "1024",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\AcerolaJam0SFX FireBossAberCardBullet__.ogg",
+                    "3",
+                    "",
+                    "",
+                    "1"
                   ]
                 }
               ]
@@ -18192,6 +18205,19 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\AcerolaJam0SFX FireBossAberCardBullet__-1.ogg",
+                    "3",
+                    "",
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -18362,6 +18388,19 @@
                     },
                     {
                       "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\AcerolaJam0StaticSFX.ogg",
+                        "4",
+                        "",
+                        "0",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Wait"
                       },
                       "parameters": [
@@ -18485,7 +18524,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        "4"
+                        "3"
                       ]
                     },
                     {
@@ -18496,6 +18535,35 @@
                         "",
                         "\"Credits scene\"",
                         ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SoundCanalVolume"
+                      },
+                      "parameters": [
+                        "",
+                        "4",
+                        "<",
+                        "100"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVolumeSoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "4",
+                        "+",
+                        "0.01"
                       ]
                     }
                   ]
