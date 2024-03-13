@@ -869,16 +869,6 @@
         "userAdded": true
       },
       {
-        "file": "assets/Audio/SFX/AcerolaJam0SFX 15-Audio.ogg",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX 15-Audio.ogg",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true
-      },
-      {
         "file": "assets/Audio/SFX/AcerolaJam0SFX FireBossAberCardBullet__.ogg",
         "kind": "audio",
         "metadata": "",
@@ -927,6 +917,15 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Visuals/HikikioiLogo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Visuals\\HikikioiLogo.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -965,6 +964,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"

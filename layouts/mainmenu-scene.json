@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7850322350976447,
+    "zoomFactor": 0.9578683769070492,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -34,7 +34,7 @@
       "width": 0,
       "x": 64,
       "y": 48,
-      "zOrder": 1,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -50,7 +50,7 @@
       "width": 160,
       "x": 80,
       "y": 144,
-      "zOrder": 4,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -67,6 +67,37 @@
       "x": 96,
       "y": 240,
       "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Logo",
+      "persistentUuid": "5dddbb3b-61db-49d8-b3c3-1006e4fcb056",
+      "width": 0,
+      "x": 136,
+      "y": -60,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 360,
+      "layer": "",
+      "name": "MainMenuBack",
+      "persistentUuid": "af9089a8-87a5-4c65-9ac9-92299bb38dba",
+      "width": 640,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -335,6 +366,82 @@
         "volume": 100,
         "videoResource": ""
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Logo",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Logo",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Visuals\\HikikioiLogo.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 172,
+                        "y": 143
+                      },
+                      {
+                        "x": 457,
+                        "y": 143
+                      },
+                      {
+                        "x": 457,
+                        "y": 342
+                      },
+                      {
+                        "x": 172,
+                        "y": 342
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 256,
+      "name": "MainMenuBack",
+      "texture": "assets\\Visuals\\assets_Visuals_HikikioiSkybox.png6Darker.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 256,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -351,6 +458,12 @@
       },
       {
         "objectName": "NewVideo"
+      },
+      {
+        "objectName": "Logo"
+      },
+      {
+        "objectName": "MainMenuBack"
       }
     ]
   },
@@ -384,6 +497,28 @@
             "value": "CenterWindow"
           },
           "parameters": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+          },
+          "parameters": [
+            "Logo",
+            "ShakeObject_PositionAngle",
+            "0.5",
+            "0.8",
+            "0.8",
+            "0",
+            "0",
+            "yes",
             ""
           ]
         }
@@ -540,6 +675,10 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
@@ -558,6 +697,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
     }
   ]
 }
