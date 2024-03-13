@@ -1276,6 +1276,16 @@
         "name": "assets\\Visuals\\BossAberCardsBullet_Front.png2",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX ButtonSelect.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

@@ -565,6 +565,19 @@
       "actions": [
         {
           "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
+            "1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
           },
           "parameters": [

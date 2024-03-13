@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5272915347541837,
+    "zoomFactor": 0.4934517391481474,
     "windowMask": false
   },
   "objectsGroups": [
@@ -8404,6 +8404,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "CardStuff",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17659,6 +17660,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Boss",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

@@ -370,6 +370,27 @@
       "actions": [
         {
           "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
+            "1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.25"
+          ]
+        },
+        {
+          "type": {
             "value": "PopScene"
           },
           "parameters": [
@@ -392,6 +413,27 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
+            "1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.25"
+          ]
+        },
         {
           "type": {
             "value": "Scene"
