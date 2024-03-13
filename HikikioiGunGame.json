@@ -907,6 +907,26 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/Audio/Music/AberBossFightP01.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\AberBossFightP01.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/Music/AberBossFightP02.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\Music\\AberBossFightP02.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
