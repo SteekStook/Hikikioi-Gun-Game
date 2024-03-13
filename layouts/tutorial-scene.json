@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.602092239436512,
+    "zoomFactor": 0.7850322350976714,
     "windowMask": false
   },
   "objectsGroups": [
@@ -7587,6 +7587,48 @@
         {
           "type": {
             "inverted": true,
+            "value": "Distance"
+          },
+          "parameters": [
+            "Player",
+            "Floor",
+            "2000",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "64",
+            "=",
+            "160"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene3D::Base3DBehavior::SetZ"
+          },
+          "parameters": [
+            "Player",
+            "Object3D",
+            "=",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
             "value": "MousePointerLock::isPointerLocked"
           },
           "parameters": [
@@ -7612,6 +7654,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
