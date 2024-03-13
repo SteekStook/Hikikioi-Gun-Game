@@ -7654,7 +7654,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -15953,6 +15952,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "CardActions",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -16004,6 +16004,19 @@
                         "1024",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\AcerolaJam0SFX PBulletFire.ogg",
+                        "1",
+                        "",
+                        "",
+                        "1"
+                      ]
                     }
                   ]
                 },
@@ -16054,6 +16067,19 @@
                         "256",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\AcerolaJam0SFX PBulletFire.ogg",
+                        "1",
+                        "",
+                        "",
+                        "0.5"
+                      ]
                     }
                   ]
                 },
@@ -16103,6 +16129,19 @@
                         "Player.Angle()",
                         "2304",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\AcerolaJam0SFX PBulletFire.ogg",
+                        "1",
+                        "",
+                        "",
+                        "2"
                       ]
                     }
                   ]
@@ -16172,6 +16211,19 @@
                         "30",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\AcerolaJam0SFX Dash.ogg",
+                        "1",
+                        "",
+                        "",
+                        "1"
+                      ]
                     }
                   ]
                 },
@@ -16232,6 +16284,19 @@
                         "\"Backward\"",
                         "25",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Audio\\SFX\\AcerolaJam0SFX Heal.ogg",
+                        "1",
+                        "",
+                        "",
+                        "1"
                       ]
                     }
                   ]
@@ -20595,6 +20660,19 @@
           "parameters": [
             "Bullets",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\Audio\\SFX\\AcerolaJam0SFX PlayerHit.ogg",
+            "2",
+            "",
+            "",
+            "0.25"
           ]
         }
       ]
