@@ -66,15 +66,6 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "assets/New3DBox_Front.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "New3DBox_Front",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Visuals/New3DBox_Front.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/Visuals/New3DBox_Front.png\",\"extension\":\".png\",\"pskl\":{}}",
@@ -88,42 +79,6 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/Visuals/WhiteBox.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "assets\\Visuals\\WhiteBox.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Crosshair.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Crosshair",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Crosshair2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Crosshair2.png\"}",
-        "name": "Crosshair2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/CardSlots.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "CardSlots",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Selected.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Selected",
         "smoothed": false,
         "userAdded": true
       },
@@ -156,67 +111,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Shaded Red Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Shaded Red Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/96409107ae77918bbcde7a715c09e12b1b6c8ef16524b06b0d162955f1bd1a27_Shaded Red Fill Bar.png",
-          "name": "Shaded Red Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Wood Bar Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Wood Bar Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/5c3135f6fa8587da82ddea950881fc8b35d422bb806d9331f8b47fdc715ee76a_Wood Bar Border.png",
-          "name": "Wood Bar Border.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Dot Bar Green Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Dot Bar Green Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/e0754c6008a7f3ec35ce32d663263982cd7a67f91974977d1c1247b90891b1b9_Dot Bar Green Border.png",
-          "name": "Dot Bar Green Border.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Dot Bar Green Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Dot Bar Green Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/11956f33bb9a6ca4997feced357ff80d8b2597367951d4ab34cd67d5a2d8b054_Dot Bar Green Fill Bar.png",
-          "name": "Dot Bar Green Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/New3DBox_Front2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "New3DBox_Front2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Visuals/New3DBox_Front2.png",
         "kind": "image",
         "metadata": "",
@@ -244,15 +138,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/New3DBox_Front3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "New3DBox_Front3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Visuals/New3DBox_Front3.png",
         "kind": "image",
         "metadata": "",
@@ -268,46 +153,6 @@
         "name": "ScreenFlash",
         "smoothed": false,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/LightGlow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "LightGlow.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Particles/c17e2d500015e598624b763f4942b26e3aac96efca094cd20257a61e15b27fcb_LightGlow.png",
-          "name": "LightGlow.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/PlayerShado2_Front.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "PlayerShado2_Front",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BasicBullet2_Front.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/BasicBullet2_Front.png\"}",
-        "name": "BasicBullet2_Front",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BasicBullet2_Front2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "BasicBullet2_Front2",
-        "smoothed": false,
-        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -344,54 +189,6 @@
         "name": "assets\\Visuals\\PlayerShado2_Front.png",
         "smoothed": false,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/BossAberCardsBullet_Front.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "BossAberCardsBullet_Front",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Black Square Decorated Button_Hovered.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Black Square Decorated Button_Hovered.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f412f1600c8331cf72f89d4bd00ce33a91d18553dea6d91ae71966a24c659e9a_Black Square Decorated Button_Hovered.png",
-          "name": "Black Square Decorated Button_Hovered.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Black Square Decorated Button_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Black Square Decorated Button_Idle.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/a33bd108a01f89ef1fe8d695b6b060e19ec466e4fce2d728ed93fb2b96ebd768_Black Square Decorated Button_Idle.png",
-          "name": "Black Square Decorated Button_Idle.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Black Square Decorated Button_Pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Black Square Decorated Button_Pressed.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c772df82fc56543546eea5576b02f73253eaf5683120a331581f0b85664f62af_Black Square Decorated Button_Pressed.png",
-          "name": "Black Square Decorated Button_Pressed.png"
-        }
       },
       {
         "file": "assets/mononoki-Regular.ttf",
@@ -442,109 +239,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/MoveIntroText2_Front.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "MoveIntroText2_Front",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/MoveIntroText2_Front2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"MoveIntroText2_Front\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":100,\\\"width\\\":100,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,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\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[null],\"name\":\"MoveIntroText2_Front\"}}",
-        "name": "MoveIntroText2_Front2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/MoveIntroText2_Front3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"New Piskel\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":0,\\\"height\\\":100,\\\"width\\\":100,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 2\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAABKdJREFUeF7tnWtuJDEIhJMT5P7HzAl21dJasrwGCvwAeth/q7Ebuz4KPJ5J8v1V/0Ip8B1qNbWYL1cgv7+/fxqDn58f17VEyQVWhCbYKbG8gPRxZyBO7ReBTgK5IdaNGL0IEogIbhWBnMyWUSA0FiUsNx+JdboipHLIs1gEiJTl1DMQsZExiKgrY9x6yExYCQhX4jgx0dJYQP65AhUCFXbM0P75VqgrWa+ZCzkELSdo4FEUFMjzfAsUCgi1Xsmp6D4t48Szv0YsaQFUY9XGQBr07HTVhLb2IWl/O16Hgay4ROoXK1mPHFW1wHcIa32GCGQsEwgYLgNn5cACpG0Ymfs6IDMo2gyQ6rJVNA0QJJm0+9o9HnJI1He7aC9Bx+0W1/I8NRBLkN1zpJ5ExUPctHut2ue9AohUDjmHa+ZqxbWMDwvE2lMQEawOQ569OuYjgVhOjqtCo/M/Fggq0O1xBeS24kK8AlJAMAVONnVsBT6jwjskw7vrnejCAkGua6K9h9gBJjWQJsCbwIQGglyBvK2kpQTSQGW4m9KWsdRA+j7zlrL1GiCzTMwIKTUQ6bPxjE3/VUCoLzFkcsorgcyafpbTWEogVKmSvkCRAUo6ILPPx5HjLzJGe0Q9MT4VEO7LCtJlZAHZnD6coOi3SjJASeEQxBkjf+nHEqL2k/BApKzWNPjx9BXxOBwaiASDu6JHf5oqGpSwQCx9oS9bktDSIWBzC4QfFx4IKizaQ6LfFIcEgpSqEcCtOXCqGwe+Boj1Kj5a6QoNRCpXlEs08yzOMiY/NO0jgGS6pn8lECgVJ4M0zrLGkOaFA6ItITuyXxtTEnXl9dBAVjamzfYoUF4BRCs+BTrCiSsskF0ia1wWwSUFZCDm7ZICUkD4IuKdod7xyyGEQ7w+wCogE8N6uqSAFJDYPcR6a6w5XnNjyyHlkHJIOURZT6qpd4J5itGW4bmG6iHVQ7Ae4vXGzPuCMZxDvI+dnuXq2XsBqctF+cjjmaWescshwRp6eCAejb0cQlQwr9NOAWFaigeUAiL0+JtQbsaith3y2Nsv9qZI3u4I29TH7Bm/nXjiK0I3wae67aUWexJKFBhpHDLewrb/73BKJBjpgFBgLIBOOk6+i6BHhG/qaAlbEWGH01bi93PTAqFOYlphIsFIW7K0omca/wqHZBJcWmsBkRS6/HoBuSy4FK6ASApdfh0CEuGO57IubuEKiJv088AFpIDEUiBaOf54h3B3Wh6w/gMyLpDKZ68rh923s1Ygp2AtAzl5a9pvmkqUlcSQ1k7BR5NitmZpvUslyxIQ7SCcU59NjRmqXQs6fuYExB1SpaHAiECQLOlFljJgBUj/7BX3jHviBObiaH4VreTGpgsMZCbG85BZtqKic+OkDXAZLpUUyl3c747v99n2jXxWw+k2m78EZPzzELvc8SwUFbVtaoyNZn0fiwOiqQJcmaPWu80hmoVqnLMLyCybNQ4Zk4Nzh9Q3JBjP60sOOQVDylqtgzj3SOCRWE0HCQhSQUxAZgtAglkcsvJczYFkJc64L+QURmmxBEQjsMdYLvulQ8PKetEDx6z8fQSQndmPgpLKF9VP/gLcoGihPZDzrwAAAABJRU5ErkJggg==\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":1,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAABKlJREFUeF7tXNFy5DAIa///o++mO5PWdY0lMI4hSx+7xICEwKF79/lRP6EQ+AwVTQXzcYqQfw32p2IISb8ExgXYLrBOEdL6HRGyK1+a/FEAd4B1h48WBETEZRuakJ3B9QCxviRgZ88zvnZ3hFQK+QqWIQRV+Ur7DU3IF0A7AxwBiwiZtbhZrGxr3JkvrY5ZZe4MsD2b9cMC2yc/8jXKm41DBa7FGMmcbSes7x5YDRAWUiRCpHiRUtk8zXbMMPQIUhqsGkLaVsreivrzrXPIDLD2QYaQFZWgebFS9QwpWsK1+Lnbo+pnrozsfd/7nYch83GEjNqEtipY0pGdNLCZy8mKyrX5LtlrQED9l2khS8E2D7PKZe284lo+R0PIsjOHA9BMklww7c0hvPUjshOiiT+FWjQJrdPPnbBzEFsVxkXuYPVuhFjeZRxg5o94R0J4dA5YFiEHQJ+5LEKKEIjAzqEOnZ82iKyQNG/XniRGJGR0E+pzjhr3MjdRE4u0plkGWXNAVEKYFcgjW1o2Qi6i0uymNOrIXmGPvI1lVQga/Gnzyhr4Y4f+Uwi58kixYs+2OmHmIAIefc74OGKTTSFSq0JfoEhzgclEyKjqmesvY3NEDSOnWQiZtSB0/S1CnMttBig7K9KQEl0hjDLYxWMKUiITggDUDPh+5RI276iBITJmb+qznJhznTuu7riIhFjmQps1ygldAnQIOluj4J3dUcexgFlaVq+scPlHC8jSUu56hqqmVaMnENJWvSYfVomrGKue1ySgOthobAXJ8pxFWca0+MeeTki6Nf3TCOFL8bdlGBzCBNL823h2M+tR/eHaVlRCrJXOktmeH4qU7IR4xW+5FKwUjfisV0IewZ0EJYxKipCfUjpZEN9RFCFFiNjdTlfoaf8vYEohfxVyFJci5Ldgj6ukCClCws4Q69bY48pftywBxWpZDTDHwdj8f01SSqoZUjOkZshMKqWQUghUyKkXsxALxkgKOX3tjHCpCLU6KUKC7bKKkCLk1zyrljUY7ycHaxEC1hd337aKkMkL0gmlFCFguXMnKXf6mqYd7T2kDfZOkEKo4+4eTW07O6P+24k7CuhO4iEGOxKETpUGO0kJRUYGhVzc7SAlHBmZCJGIuX6vUfoOcpWil801ibg5XTyI/dY74yZc/uECYlBsbFbICZl7yKCUpDzKvAgJRmcRUoQEQyBYOKWQZISE2fEEw21bOEghRcg26McHFyE3A47cvTMhIdVfhPyUbIvFMbJGQayqCj1v/dx7OztbMs4I2UrWCiE7t6Zt0tK+Cql7RjyKXSKfLYpRzFS8yEiqBrNDQh6zheFXvH1M2lhY+1HujDrQwnOK+exDpkpafBG5BBcvEwTYinr6nNjWhBQ1+nvNhQf77OsMhhCprY2qlQXdq51c54ySH+UmqQvZWlrVDDcxfyshPQBe6ugVMgOqJ6OvUgRy64vxgwpYOu82hexoV56EjADUKGTUPqXCQ3NDKp4/SrEqZBcZqGq1hPX5SfOHAZrBSmpFdAdhnCA5087IAcPcZNBRmguJZ/zLsVsJQYCc/nw2hFU9XZnI7IZI+X06IZ7Vz3KzNE/+Ay07GnTugQgyAAAAAElFTkSuQmCC\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[\\\"\\\"]}}\",\"resourceNames\":[null],\"name\":\"MoveIntroText2_Front\"}}",
-        "name": "MoveIntroText2_Front3",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/TurnIntroText2_Front.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "TurnIntroText2_Front",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/CardSelectIntroText2_Front.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "CardSelectIntroText2_Front",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/CardSelectIntroText2_Front2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "CardSelectIntroText2_Front2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/CardSelectIntroText2_Front3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "CardSelectIntroText2_Front3",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Visuals/ShuffleCardIntroText.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Visuals\\ShuffleCardIntroText.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Visuals/ShuffleCardIntroText1.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Visuals\\ShuffleCardIntroText1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/New3DBox_Front4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "New3DBox_Front4",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/New3DBox_Front5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "New3DBox_Front5",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/New3DBox_Front6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "New3DBox_Front6",
         "smoothed": false,
         "userAdded": true
       },
@@ -748,33 +446,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Visuals/UI/HikikioiCard0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Visuals\\UI\\HikikioiCard0.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/0.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "0",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/02.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "02",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Visuals/UI/0.png",
         "kind": "image",
         "metadata": "",
@@ -799,150 +470,6 @@
         "name": "assets\\Visuals\\UI\\HikikioiDrawDiscardPileIcon.png",
         "smoothed": false,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Floor_Front.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Floor_Front",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Visuals/Floor_Front.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Visuals\\Floor_Front.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_Floor_Front.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\Floor_Front.png2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_Floor_Front.png3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\Floor_Front.png3",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_Floor_Front.png4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\Floor_Front.png4",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Visuals/HikikioiSkybox.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Visuals\\HikikioiSkybox.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png3",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/assets_Visuals_HikikioiSkybox.png4.png\"}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png4",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png5",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png7",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png8.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png8",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png9",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png10.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png10",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiSkybox.png11.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiSkybox.png11",
-        "smoothed": false,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -1013,15 +540,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Visuals\\MoveControlsIntroText.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Visuals/MoveControlsIntroText1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Visuals\\MoveControlsIntroText1.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -1130,33 +648,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Visuals\\HikikioiAberTurret.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Visuals/HikikioiAberIdle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Visuals\\HikikioiAberIdle.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Visuals/HikikioiAberSquareIdle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Visuals\\HikikioiAberSquareIdle.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/assets_Visuals_HikikioiAberSquareIdle.png2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "assets\\Visuals\\HikikioiAberSquareIdle.png2",
         "smoothed": false,
         "userAdded": true
       },
@@ -1282,6 +773,66 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\Audio\\SFX\\AcerolaJam0SFX ButtonSelect.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX PBulletFire.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX PBulletFire.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX Dash.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX Dash.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX Heal.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX Heal.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX AberHeal.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX AberHeal.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX PlayerHit.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX PlayerHit.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX AberJump.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX AberJump.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
