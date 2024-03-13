@@ -17491,7 +17491,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "BulletCollisions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17543,6 +17542,19 @@
                     "0.2",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\AcerolaJam0SFX PlayerHit.ogg",
+                    "2",
+                    "",
+                    "",
+                    "0.25"
+                  ]
                 }
               ]
             },
@@ -17593,6 +17605,19 @@
                     "0.2",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\AcerolaJam0SFX PlayerHit.ogg",
+                    "2",
+                    "",
+                    "",
+                    "0.25"
+                  ]
                 }
               ]
             },
@@ -17641,6 +17666,19 @@
                     "Flash",
                     "0.2",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\AcerolaJam0SFX PlayerHit.ogg",
+                    "2",
+                    "",
+                    "",
+                    "0.25"
                   ]
                 }
               ]
@@ -18472,6 +18510,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "BossActions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20368,6 +20407,19 @@
                     "Player",
                     "\"DmgInvincTime\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\AcerolaJam0SFX PlayerHit.ogg",
+                    "0",
+                    "",
+                    "",
+                    "1"
+                  ]
                 }
               ],
               "events": [
@@ -20488,6 +20540,19 @@
                   "parameters": [
                     "Player",
                     "\"DmgInvincTime\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\AcerolaJam0SFX PlayerHit.ogg",
+                    "0",
+                    "",
+                    "",
+                    "1"
                   ]
                 }
               ],
@@ -20611,6 +20676,19 @@
                   "parameters": [
                     "Player",
                     "\"DmgInvincTime\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Audio\\SFX\\AcerolaJam0SFX PlayerHit.ogg",
+                    "0",
+                    "",
+                    "",
+                    "1"
                   ]
                 }
               ],

@@ -867,6 +867,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/Audio/SFX/AcerolaJam0SFX 15-Audio.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Audio\\SFX\\AcerolaJam0SFX 15-Audio.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
