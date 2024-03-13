@@ -924,11 +924,11 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/bossroom-scene"
+      "referenceTo": "/layouts/tutorial-scene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/tutorial-scene"
+      "referenceTo": "/layouts/bossroom-scene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
